@@ -8,134 +8,139 @@
 		<title>Georgian Restaurant</title>
 		<link rel="stylesheet" href="styles.css">
 	</head>
-	<body>
-		<header class="header">
-			<div class="header__wrapper wrapper">
-				<nav class="header__navigation navigation">
-					<img src="images/logo.svg" alt="logo" class="navigation__logo">
+	<body class="overflow-hidden">
+		<div class="loader hidden" id="loader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 
-					<ul class="navigation__list">
-						<li class="navigation__item">
-							<a href="#" class="navigation__link">главная</a>
-						</li>
-						<li class="navigation__item">
-							<a href="#" class="navigation__link">меню</a>
-						</li>
-						<li class="navigation__item">
-							<a href="#" class="navigation__link">доставка</a>
-						</li>
-						<li class="navigation__item">
-							<a href="#" class="navigation__link">контакты</a>
-						</li>
-						<li class="navigation__item">
-							<a href="#" class="navigation__link">акции</a>
-						</li>
-					</ul>
+		<div class="root hidden" id="root">
+			<header class="header min-bg">
+				<div class="header__wrapper wrapper">
+					<nav class="header__navigation navigation">
+						<img src="images/logo.svg" alt="logo" class="navigation__logo min-src">
 
-					<div class="navigation__second-side">
-						<div class="navigation__phone">
-							<img src="images/icon_phone.svg" alt="phone">
-							<span>+38 (066) 123 45 67</span>
+						<ul class="navigation__list">
+							<li class="navigation__item">
+								<a href="#" class="navigation__link">главная</a>
+							</li>
+							<li class="navigation__item">
+								<a href="#" class="navigation__link">меню</a>
+							</li>
+							<li class="navigation__item">
+								<a href="#" class="navigation__link">доставка</a>
+							</li>
+							<li class="navigation__item">
+								<a href="#" class="navigation__link">контакты</a>
+							</li>
+							<li class="navigation__item">
+								<a href="#" class="navigation__link">акции</a>
+							</li>
+						</ul>
+
+						<div class="navigation__second-side">
+							<div class="navigation__phone">
+								<img class="min-src" src="images/icon_phone.svg" alt="phone">
+								<span>+38 (066) 123 45 67</span>
+							</div>
+
+							<div class="navigation__socials">
+								<a href="https://instagram.com" target="_blank">
+									<img class="min-src" src="images/icon_inst.svg" alt="instagram">
+								</a>
+								<a href="https://facebook.com" target="_blank">
+									<img class="min-src" src="images/icon_face.svg" alt="facebook">
+								</a>
+								<a href="https://twitter.com" target="_blank">
+									<img class="min-src" src="images/icon_twit.svg" alt="twitter">
+								</a>
+							</div>
 						</div>
+					</nav>
 
-						<div class="navigation__socials">
-							<a href="https://instagram.com" target="_blank">
-								<img src="images/icon_inst.svg" alt="instagram">
-							</a>
-							<a href="https://facebook.com" target="_blank">
-								<img src="images/icon_face.svg" alt="facebook">
-							</a>
-							<a href="https://twitter.com" target="_blank">
-								<img src="images/icon_twit.svg" alt="twitter">
-							</a>
+					<section class="header__content">
+						<h1>Попробуй лучшую <span>грузинскую</span> кухню в Киеве.</h1>
+						<p>
+							В нашем ресторане Вы найдете лучшие блюда приготвленные по старинным рецептам грузинской кухни.
+							Потрясающий вкус блюд перенесет Вас к атмосферу невероятного Тбилисси не выходя из дома.
+						</p>
+						<button class="button button_primary">перейти к меню</button>
+					</section>
+				</div>
+			</header>
+
+			<main class="main min-bg">
+				<section class="proposal">
+					<div class="wrapper proposal__wrapper">
+
+						<h2 class="heading">Попробуйте на вкус</h2>
+						<p class="description">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Nullam pretium netus urna hendrerit convallis aliquam consequat turpis.
+						</p>
+
+						<div class="proposal__card-container">
+							<div class="proposal__card">
+								<img class="proposal__decoration proposal__decoration_4 min-src" src="images/decoration_4_min.png" alt="basil">
+								<img class="proposal__card-img min-src" src="images/ellipse_dish_1_min.png" alt="food">
+								<p class="proposal__card-description">Здесь будет какой то текст, возможно назване блюда</p>
+							</div>
+
+							<div class="proposal__card">
+								<img class="proposal__card-img min-src" src="images/ellipse_dish_2_min.png" alt="food">
+								<p class="proposal__card-description">Здесь будет какой то текст, возможно назване блюда</p>
+							</div>
+
+							<div class="proposal__card">
+								<img class="proposal__card-img min-src" src="images/ellipse_dish_3_min.png" alt="food">
+								<p class="proposal__card-description">Здесь будет какой то текст, возможно назване блюда</p>
+							</div>
 						</div>
+						<button class="button button_primary">перейти к доставке</button>
 					</div>
-				</nav>
-
-				<section class="header__content">
-					<h1>Попробуй лучшую <span>грузинскую</span> кухню в Киеве.</h1>
-					<p>
-						В нашем ресторане Вы найдете лучшие блюда приготвленные по старинным рецептам грузинской кухни.
-					  Потрясающий вкус блюд перенесет Вас к атмосферу невероятного Тбилисси не выходя из дома.
-					</p>
-					<button class="button button_primary">перейти к меню</button>
+					<img class="proposal__decoration proposal__decoration_1 min-src" src="images/decoration_1_min.png" alt="tomato">
+					<img class="proposal__decoration proposal__decoration_2 min-src" src="images/decoration_2_min.png" alt="salad">
+					<img class="proposal__decoration proposal__decoration_3 min-src" src="images/decoration_3_min.png" alt="highlight">
 				</section>
-			</div>
-		</header>
 
-		<main class="main">
-			<section class="proposal">
-				<div class="wrapper proposal__wrapper">
+				<section class="menu">
+					<div class="menu__wrapper">
+						<h2 class="heading">Меню</h2>
+						<p class="description">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Nullam pretium netus urna hendrerit convallis aliquam consequat turpis.
+						</p>
 
-					<h2 class="heading">Попробуйте на вкус</h2>
-					<p class="description">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Nullam pretium netus urna hendrerit convallis aliquam consequat turpis.
-					</p>
+						<!--					<slider class="menu__slider">-->
+						<!--						<ul class="menu__slider-list">-->
+						<!--							<li class="menu__card">-->
+						<!--								<img src="images/menu_card_1.jpg" alt="card_food">-->
+						<!--								<span>Салаты</span>-->
+						<!--							</li>-->
+						<!--							<li class="menu__card">-->
+						<!--								<img src="images/menu_card_2.jpg" alt="card_food">-->
+						<!--								<span>Выпечка</span>-->
+						<!--							</li>-->
+						<!--							<li class="menu__card">-->
+						<!--								<img src="images/menu_card_3.jpg" alt="card_food">-->
+						<!--								<span>Супы</span>-->
+						<!--							</li>-->
+						<!--							<li class="menu__card">-->
+						<!--								<img src="images/menu_card_4.jpg" alt="card_food">-->
+						<!--								<span>Блюда на мангале</span>-->
+						<!--							</li>-->
+						<!--							<li class="menu__card">-->
+						<!--								<img src="images/menu_card_5.jpg" alt="card_food">-->
+						<!--								<span>Горячие блюда</span>-->
+						<!--							</li>-->
+						<!--							<li class="menu__card">-->
+						<!--								<img src="images/menu_card_6.jpg" alt="card_food">-->
+						<!--								<span>Соусы</span>-->
+						<!--							</li>-->
+						<!--						</ul>-->
+						<!--					</slider>-->
 
-					<div class="proposal__card-container">
-						<div class="proposal__card">
-							<img class="proposal__decoration proposal__decoration_4" src="images/decoration_4_max.png" alt="basil">
-							<img class="proposal__card-img" src="images/ellipse_dish_1_max.png" alt="food">
-							<p class="proposal__card-description">Здесь будет какой то текст, возможно назване блюда</p>
-						</div>
-
-						<div class="proposal__card">
-							<img class="proposal__card-img" src="images/ellipse_dish_2_max.png" alt="food">
-							<p class="proposal__card-description">Здесь будет какой то текст, возможно назване блюда</p>
-						</div>
-
-						<div class="proposal__card">
-							<img class="proposal__card-img" src="images/ellipse_dish_3_max.png" alt="food">
-							<p class="proposal__card-description">Здесь будет какой то текст, возможно назване блюда</p>
-						</div>
 					</div>
-					<button class="button button_primary">перейти к доставке</button>
-				</div>
-				<img class="proposal__decoration proposal__decoration_1" src="images/decoration_1_max.png" alt="tomato">
-				<img class="proposal__decoration proposal__decoration_2" src="images/decoration_2_max.png" alt="salad">
-				<img class="proposal__decoration proposal__decoration_3" src="images/decoration_3_max.png" alt="highlight">
-			</section>
-
-			<section class="menu">
-				<div class="menu__wrapper">
-					<h2 class="heading">Меню</h2>
-					<p class="description">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Nullam pretium netus urna hendrerit convallis aliquam consequat turpis.
-					</p>
-
-<!--					<slider class="menu__slider">-->
-<!--						<ul class="menu__slider-list">-->
-<!--							<li class="menu__card">-->
-<!--								<img src="images/menu_card_1.jpg" alt="card_food">-->
-<!--								<span>Салаты</span>-->
-<!--							</li>-->
-<!--							<li class="menu__card">-->
-<!--								<img src="images/menu_card_2.jpg" alt="card_food">-->
-<!--								<span>Выпечка</span>-->
-<!--							</li>-->
-<!--							<li class="menu__card">-->
-<!--								<img src="images/menu_card_3.jpg" alt="card_food">-->
-<!--								<span>Супы</span>-->
-<!--							</li>-->
-<!--							<li class="menu__card">-->
-<!--								<img src="images/menu_card_4.jpg" alt="card_food">-->
-<!--								<span>Блюда на мангале</span>-->
-<!--							</li>-->
-<!--							<li class="menu__card">-->
-<!--								<img src="images/menu_card_5.jpg" alt="card_food">-->
-<!--								<span>Горячие блюда</span>-->
-<!--							</li>-->
-<!--							<li class="menu__card">-->
-<!--								<img src="images/menu_card_6.jpg" alt="card_food">-->
-<!--								<span>Соусы</span>-->
-<!--							</li>-->
-<!--						</ul>-->
-<!--					</slider>-->
-
-				</div>
-			</section>
-		</main>
+				</section>
+			</main>
+		</div>
+		<script src="scripts/preloader.js"></script>
 	</body>
 </html>

@@ -39,8 +39,16 @@
 }
 
 .main {
-	background: url("../images/background_main_max.jpg");
+	background: url("../images/background_main_min.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.overflow-hidden {
+	overflow: hidden;
 }
