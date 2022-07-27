@@ -1,19 +1,34 @@
 .navigation {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 130px;
 
 	&__logo {
-		margin: 10px 120px 0 0;
 		width: 133px;
 		height: 66px;
 	}
 
 	&__list {
 		display: flex;
+		//justify-content: space-around;
+		//width: 100%;
 	}
 
 	&__item:not(:last-child) {
 		margin-right: 60px;
+	}
+
+	&__link {
+		font-family: "Noto Sans", sans-serif;
+		font-weight: 500;
+		font-size: 16px;
+		color: #FFFFFF;
+	}
+
+	&__second-side {
+		display: flex;
+		align-items: center;
 	}
 
 	&__phone {
@@ -22,13 +37,25 @@
 		img {
 			width: 20px;
 		}
+		span {
+			font-family: "Noto Sans", sans-serif;
+			font-weight: 400;
+			font-size: 21px;
+			margin-left: 6px;
+			color: #FFFFFF;
+		}
 	}
 
 	&__socials {
 		display: flex;
+		align-items: center;
+		margin-left: 20px;
 
-		img {
-			width: 20px;
+		a:not(:first-child) {
+			img {
+				margin-left: 16px;
+				width: 20px;
+			}
 		}
 	}
 }

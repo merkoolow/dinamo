@@ -1,5 +1,18 @@
 .wrapper {
 	width: 100%;
 	max-width: 1920px;
-	padding: 0 100px 176px 100px;
+	margin: 0 auto;
+}
+
+.button {
+	font-family: "Noto Sans", sans-serif;
+	font-weight: 900;
+	font-size: 14px;
+	border-radius: 5px;
+	cursor: pointer;
+
+	&_primary {
+		background-color: #B82121;
+		color: #FFFFFF;
+	}
 }
