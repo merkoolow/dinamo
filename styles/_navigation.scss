@@ -1,7 +1,9 @@
 .navigation {
 	display: flex;
+	align-items: center;
 
 	&__logo {
+		margin: 10px 120px 0 0;
 		width: 133px;
 		height: 66px;
 	}
@@ -10,7 +12,13 @@
 		display: flex;
 	}
 
+	&__item:not(:last-child) {
+		margin-right: 60px;
+	}
+
 	&__phone {
+		display: flex;
+		align-items: center;
 		img {
 			width: 20px;
 		}
