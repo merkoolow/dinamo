@@ -1,10 +1,6 @@
 .proposal {
 	width: 100%;
-	min-height: 100vh;
-	background-image: url("/images/proposal_background.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	position: relative;
 
 	&__wrapper {
 		display: flex;
@@ -13,14 +9,27 @@
 		justify-content: center;
 		text-align: center;
 		width: 100%;
-		padding: 120px 100px 0 100px;
+		padding: 120px 100px 50px 100px;
 	}
 
 	&__card-container {
 		display: flex;
+		justify-content: center;
 		width: 100%;
-		justify-content: space-around;
 		margin-bottom: 60px;
+	}
+
+	&__card-container > &__card:nth-child(1) {
+		position: relative;
+	}
+
+	&__card-container > &__card:nth-child(1) > &__card-img {
+		position: relative;
+		z-index: 2;
+	}
+
+	&__card-container > &__card:nth-child(2) {
+		margin: 0 60px;
 	}
 
 	&__card {
@@ -43,8 +52,32 @@
 		color: #FFFFFF;
 	}
 
-	.button {
-		margin-bottom: 140px;
+	&__decoration {
+		position: absolute;
+
+		&_1 {
+			left: 0;
+			top: 0;
+			transform: translateY(-25%);
+		}
+
+		&_2 {
+			right: 0;
+			top: 50%;
+			transform: translateY(-25%);
+		}
+
+		&_3 {
+			left: 0;
+			bottom: 0;
+			transform: translate(10%, 50%);
+		}
+
+		&_4 {
+			z-index: 1;
+			left: -25%;
+			top: -20%;
+		}
 	}
 }
 
