@@ -1,0 +1,50 @@
+.proposal {
+	width: 100%;
+	min-height: 100vh;
+	background-image: url("/images/proposal_background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		width: 100%;
+		padding: 120px 100px 0 100px;
+	}
+
+	&__card-container {
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+		margin-bottom: 60px;
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		width: 287px;
+	}
+
+	&__card-img {
+		border-radius: 50%;
+		margin-bottom: 40px;
+	}
+
+	&__card-description {
+		font-family: "Noto Sans", sans-serif;
+		text-align: center;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 25px;
+		color: #FFFFFF;
+	}
+
+	.button {
+		margin-bottom: 140px;
+	}
+}
+
