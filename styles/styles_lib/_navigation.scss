@@ -1,0 +1,26 @@
+.navigation {
+	display: flex;
+
+	&__logo {
+		width: 133px;
+		height: 66px;
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__phone {
+		img {
+			width: 20px;
+		}
+	}
+
+	&__socials {
+		display: flex;
+
+		img {
+			width: 20px;
+		}
+	}
+}
