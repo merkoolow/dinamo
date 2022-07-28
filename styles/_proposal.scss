@@ -3,6 +3,7 @@
 .proposal {
 	width: 100%;
 	position: relative;
+	z-index: 2;
 
 	&__wrapper {
 		display: flex;
@@ -12,6 +13,7 @@
 		text-align: center;
 		width: 100%;
 		padding: 120px 100px 50px 100px;
+		position: relative;
 	}
 
 	&__card-container {
@@ -25,6 +27,10 @@
 	&__card-container > &__card:nth-child(1) > &__card-img {
 		position: relative;
 		z-index: 2;
+	}
+
+	&__card-container > &__card:nth-child(1) {
+		position: relative;
 	}
 
 	&__card {
@@ -53,15 +59,15 @@
 		position: absolute;
 
 		&_1 {
-			left: 0;
+			left: -50px;
 			top: 0;
 			transform: translateY(-25%);
 		}
 
 		&_2 {
-			right: 0;
+			right: -150px;
 			top: 50%;
-			transform: translateY(-25%);
+			transform: translateY(-25%) rotate(102deg);
 		}
 
 		&_3 {

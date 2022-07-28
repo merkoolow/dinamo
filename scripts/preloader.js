@@ -2,20 +2,23 @@ class Preloader {
 	preloaderImages = [];
 
 	minImages = [
-		'images/background_header_min.jpg',
-		'images/background_main_min.jpg',
-		'images/decoration_1_min.png',
-		'images/decoration_2_min.png',
-		'images/decoration_3_min.png',
-		'images/decoration_4_min.png',
-		'images/ellipse_dish_1_min.png',
-		'images/ellipse_dish_2_min.png',
-		'images/ellipse_dish_3_min.png',
-		'images/icon_face.svg',
-		'images/icon_inst.svg',
-		'images/icon_phone.svg',
-		'images/icon_twit.svg',
-		'images/logo.svg',
+		'images/backgrounds/background_header_min.jpg',
+		'images/backgrounds/background_main_min.jpg',
+
+		'images/decorations/decoration_bas_min.png',
+		'images/decorations/decoration_tomato_min.png',
+		'images/decorations/decoration_blur_min.png',
+
+		'images/shared-icons/icon_face.svg',
+		'images/shared-icons/icon_inst.svg',
+		'images/shared-icons/icon_phone.svg',
+		'images/shared-icons/icon_twit.svg',
+		'images/shared-icons/logo.svg',
+
+		'images/proposal/ellipse_dish_1_min.png',
+		'images/proposal/ellipse_dish_2_min.png',
+		'images/proposal/ellipse_dish_3_min.png',
+
 		'images/dishes/bakery_min.jpg',
 		'images/dishes/drinks_min.jpg',
 		'images/dishes/grill_dishes_min.jpg',
@@ -23,19 +26,25 @@ class Preloader {
 		'images/dishes/hot_drinks_min.jpg',
 		'images/dishes/salads_min.jpg',
 		'images/dishes/sauces_min.jpg',
-		'images/dishes/soups_min.jpg'
+		'images/dishes/soups_min.jpg',
+
+		'images/delivery/delivery_food_max.jpg',
+		'images/delivery/delivery_icon_1.png',
+		'images/delivery/delivery_icon_2.png',
+		'images/delivery/delivery_icon_3.svg'
 	];
 
 	maxImages = [
-		'images/background_header_max.jpg',
-		'images/background_main_max.jpg',
-		'images/decoration_1_max.png',
-		'images/decoration_2_max.png',
-		'images/decoration_3_max.png',
-		'images/decoration_4_max.png',
-		'images/ellipse_dish_1_max.png',
-		'images/ellipse_dish_2_max.png',
-		'images/ellipse_dish_3_max.png',
+		'images/backgrounds/background_header_max.jpg',
+		'images/backgrounds/background_main_max.jpg',
+
+		'images/decorations/decoration_bas_max.png',
+		'images/decorations/decoration_tomato_max.png',
+		'images/decorations/decoration_blur_max.png',
+
+		'images/proposal/ellipse_dish_1_max.png',
+		'images/proposal/ellipse_dish_2_max.png',
+		'images/proposal/ellipse_dish_3_max.png',
 
 		'images/dishes/bakery_max.jpg',
 		'images/dishes/drinks_max.jpg',
@@ -44,7 +53,9 @@ class Preloader {
 		'images/dishes/hot_drinks_max.jpg',
 		'images/dishes/salads_max.jpg',
 		'images/dishes/sauces_max.jpg',
-		'images/dishes/soups_max.jpg'
+		'images/dishes/soups_max.jpg',
+
+		'images/delivery/delivery_food_max.jpg'
 	];
 
 	preloaderResources = [];

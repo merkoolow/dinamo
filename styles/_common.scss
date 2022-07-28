@@ -50,7 +50,7 @@
 }
 
 .main {
-	@include background-image("background_main_min.jpg", cover, center top);
+	@include background-image("backgrounds/background_main_min.jpg", cover, center top);
 }
 
 .hidden {

@@ -4,7 +4,21 @@
 .header {
 	width: 100%;
 	height: 800px;
-	@include background-image("background_header_min.jpg", cover, center bottom);
+	position: relative;
+	z-index: 1;
+
+	&:after {
+		left: 0;
+		top: -2px;
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		box-shadow: 0 0 75px 50px rgba(0,0,0,1);
+		z-index: -1;
+	}
+
+	@include background-image("backgrounds/background_header_min.jpg", cover, center bottom);
 
 	&__wrapper {
 		height: 100%;
@@ -43,11 +57,5 @@
 			color: $primary-font-color;
 		}
 
-	}
-}
-
-@media (min-width: 1441px) {
-	.header {
-		height: 100vh;
 	}
 }

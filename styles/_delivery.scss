@@ -8,6 +8,7 @@
 		align-items: center;
 		text-align: center;
 		padding: 80px 100px 80px 80px;
+		position: relative;
 	}
 
 	&__content {
@@ -53,19 +54,19 @@
 		}
 
 		&_dinamo {
-			background-image: url("../images/delivery_icon_1.svg");
+			background-image: url("../images/delivery/delivery_icon_1.png");
 			width: 120px;
 			height: 120px;
 		}
 
 		&_spiral {
-			background-image: url("../images/delivery_icon_2.svg");
+			background-image: url("../images/delivery/delivery_icon_2.png");
 			width: 120px;
 			height: 120px;
 		}
 
 		&_glovo {
-			background-image: url("../images/delivery_icon_3.svg");
+			background-image: url("../images/delivery/delivery_icon_3.svg");
 			background-size: contain;
 			width: 120px;
 			height: 120px;
@@ -88,5 +89,27 @@
 
 	&__img_big {
 		width: 605px;
+	}
+
+	&__decoration {
+		position: absolute;
+
+		&_1 {
+			left: -170px;
+			top: 0;
+			transform: rotate(-78deg);
+		}
+
+		&_2 {
+			right: -160px;
+			bottom: -90px;
+			transform: rotate(102deg);
+		}
+
+		&_3 {
+			left: -75px;
+			bottom: 20px;
+			transform: rotate(20deg);
+		}
 	}
 }
