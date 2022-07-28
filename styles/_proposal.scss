@@ -18,16 +18,13 @@
 		display: flex;
 		justify-content: center;
 		width: 100%;
+		gap: 60px;
 		margin-bottom: 60px;
 	}
 
 	&__card-container > &__card:nth-child(1) > &__card-img {
 		position: relative;
 		z-index: 2;
-	}
-
-	&__card-container > &__card:nth-child(2) {
-		margin: 0 60px;
 	}
 
 	&__card {
