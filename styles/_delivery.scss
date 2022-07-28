@@ -67,7 +67,7 @@
 		}
 
 		&_glovo {
-			@include background-image("delivery/delivery_icon_3.png", cover, center);
+			@include background-image("delivery/delivery_icon_3.svg", cover, center);
 			background-size: contain;
 			width: 120px;
 			height: 120px;
