@@ -2,10 +2,16 @@
 @import "styles/styles_lib/fonts";
 @import "styles/styles_lib/normalize";
 
+//variables
+@import "styles/styles_lib/variables";
+
+//mixins
+@import "styles/styles_lib/mixins";
+
 //blocks
 @import "styles/common";
 @import "styles/loader";
 @import "styles/header";
 @import "styles/navigation";
 @import "styles/proposal";
-@import "styles/menu";
+@import "styles/dishes";

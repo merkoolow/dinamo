@@ -1,0 +1,28 @@
+@mixin background-image($name, $size, $position, $repeat: no-repeat) {
+	background-image: url("./images/#{$name}");
+	background-size: $size;
+	background-position: $position;
+	background-repeat: $repeat;
+}
+
+@mixin imageTransition($name, $duration, $timing-function) {
+	position: relative;
+
+	&:after {
+		opacity: 0;
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background-image: url("./images/#{$name}");
+		background-size: cover;
+		background-position: center;
+		transition: opacity $duration $timing-function;
+	}
+
+	&:hover:after {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,103 @@
+@import "styles_lib/variables";
+
+.dishes {
+	width: 100%;
+	min-height: 100vh;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		width: 100%;
+	}
+
+	&__scroll-list {
+		display: flex;
+		overflow-x: scroll;
+		max-width: 100%;
+		gap: 5px;
+	}
+
+	&__card {
+		width: 288px;
+		height: 508px;
+		flex-shrink: 0;
+		position: relative;
+		margin-bottom: 10px;
+
+		&:after {
+			content: '';
+			background-color: rgba(0, 0, 0, .6);
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			z-index: 2;
+			transition: background-color 200ms ease-in-out;
+		}
+
+		&:hover {
+			.dishes__button {
+				opacity: 1;
+			}
+		}
+
+		&:hover:after {
+			background: rgba(0, 0, 0, .0);
+		}
+	}
+
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+	}
+
+	&__button {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 3;
+		opacity: 0;
+	}
+
+	h3 {
+		font-family: "Noto Sans", sans-serif;
+		font-weight: 800;
+		font-size: 24px;
+		position: absolute;
+		transform: translateX(-50%);
+		left: 50%;
+		bottom: 25px;
+		opacity: 1;
+		z-index: 3;
+		color: $primary-font-color;
+	}
+
+	::-webkit-scrollbar {
+		height: 6px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		background: #000;
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: #888;
+		border-radius: 5px;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: #555;
+	}
+}
