@@ -1,24 +1,23 @@
 .gallery {
-	margin-bottom: 40px;
-
 	&__wrapper {
 		position: relative;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		width: 100%;
 		gap: 2px;
+		padding: 80px 0 20px 0;
 	}
 
 	&__row {
 		display: flex;
 		gap: 2px;
+		width: 100%;
 	}
 
 	&__img {
 		display: block;
-		width: 358px;
+		width: 25%;
 		transition: transform, opasity, 300ms ease-in-out;
 		opacity: 0.8;
 	}
