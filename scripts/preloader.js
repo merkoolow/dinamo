@@ -31,7 +31,16 @@ class Preloader {
 		'images/delivery/delivery_food_max.jpg',
 		'images/delivery/delivery_icon_1.png',
 		'images/delivery/delivery_icon_2.png',
-		'images/delivery/delivery_icon_3.svg'
+		'images/delivery/delivery_icon_3.svg',
+
+		'images/gallery/gal1_max.jpg',
+		'images/gallery/gal2_max.jpg',
+		'images/gallery/gal3_max.jpg',
+		'images/gallery/gal4_max.jpg',
+		'images/gallery/gal5_max.jpg',
+		'images/gallery/gal6_max.jpg',
+		'images/gallery/gal7_max.jpg',
+		'images/gallery/gal8_max.jpg'
 	];
 
 	maxImages = [
@@ -55,7 +64,16 @@ class Preloader {
 		'images/dishes/sauces_max.jpg',
 		'images/dishes/soups_max.jpg',
 
-		'images/delivery/delivery_food_max.jpg'
+		'images/delivery/delivery_food_max.jpg',
+
+		'images/gallery/gal1_min.jpg',
+		'images/gallery/gal2_min.jpg',
+		'images/gallery/gal3_min.jpg',
+		'images/gallery/gal4_min.jpg',
+		'images/gallery/gal5_min.jpg',
+		'images/gallery/gal6_min.jpg',
+		'images/gallery/gal7_min.jpg',
+		'images/gallery/gal8_min.jpg'
 	];
 
 	preloaderResources = [];
