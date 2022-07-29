@@ -10,6 +10,108 @@
 .logo {
 	width: 133px;
 	height: 66px;
+	position: relative;
+
+	&__img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+
+		&_hover {
+			transition: opacity 200ms ease-in-out;
+			opacity: 0;
+		}
+	}
+
+	&:hover {
+		.logo__img_hover {
+			opacity: 1;
+		}
+	}
+}
+
+.phone {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+
+	.phone__icon {
+		width: 20px;
+		height: 20px;
+		position: relative;
+	}
+
+	.phone__image {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+
+		&_hover {
+			transition: opacity 200ms ease-in-out;
+			opacity: 0;
+		}
+	}
+
+	span {
+		font-family: "Noto Sans", sans-serif;
+		font-weight: 400;
+		font-size: 21px;
+		margin-left: 6px;
+		color: $primary-font-color;
+		transition: color 200ms ease-in-out;
+	}
+
+	&:hover {
+		.phone__image_hover {
+			opacity: 1;
+		}
+
+		span {
+			color: $secondary-font-color;
+		}
+	}
+}
+
+.socials {
+	display: flex;
+	align-items: center;
+	margin-left: 20px;
+
+	a:not(:first-child) {
+		margin-left: 16px;
+	}
+
+	a {
+		transition: transform 200ms ease-in-out;
+		position: relative;
+		width: 20px;
+		height: 20px;
+
+		&:hover {
+			transform: scale(1.2);
+
+			.socials__img_hover {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+
+		&_hover {
+			transition: opacity 200ms ease-in-out;
+			opacity: 0;
+		}
+	}
 }
 
 .button {

@@ -12,44 +12,53 @@
 		<div class="loader hidden" id="loader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 
 		<div class="root hidden" id="root">
-			<header class="header min-bg">
+			<header class="header min-bg" id="home">
 				<div class="header__wrapper wrapper">
 					<nav class="header__navigation navigation">
-						<img src="./images/shared-icons/logo.svg" alt="logo" class="navigation__logo logo min-src">
+						<a class="navigation__logo logo" href="#home">
+							<img src="./images/shared-icons/logo.svg" alt="logo" class="logo__img min-src">
+							<img src="./images/shared-icons/logo_hover.svg" alt="logo" class="logo__img logo__img_hover min-src">
+						</a>
 
 						<ul class="navigation__list">
 							<li class="navigation__item">
-								<a href="#" class="navigation__link">главная</a>
+								<a href="#home" class="navigation__link">главная</a>
 							</li>
 							<li class="navigation__item">
-								<a href="#" class="navigation__link">меню</a>
+								<a href="#menu" class="navigation__link">меню</a>
 							</li>
 							<li class="navigation__item">
-								<a href="#" class="navigation__link">доставка</a>
+								<a href="#delivery" class="navigation__link">доставка</a>
 							</li>
 							<li class="navigation__item">
-								<a href="#" class="navigation__link">контакты</a>
+								<a href="#contacts" class="navigation__link">контакты</a>
 							</li>
 							<li class="navigation__item">
-								<a href="#" class="navigation__link">акции</a>
+								<a href="#menu" class="navigation__link">акции</a>
 							</li>
 						</ul>
 
 						<div class="navigation__second-side">
-							<div class="navigation__phone">
-								<img class="min-src" src="./images/shared-icons/icon_phone.svg" alt="phone">
+							<a class="navigation__phone phone" href="tel:5554280940">
+								<div class="phone__icon">
+									<img class="phone__image min-src" src="./images/shared-icons/icon_phone.svg" alt="phone">
+									<img class="phone__image phone__image_hover min-src" src="./images/shared-icons/icon_phone_hover.svg" alt="phone">
+								</div>
 								<span>+38 (066) 123 45 67</span>
-							</div>
+							</a>
 
-							<div class="navigation__socials">
+							<div class="navigation__socials socials">
 								<a href="https://instagram.com" target="_blank">
-									<img class="min-src" src="./images/shared-icons/icon_inst.svg" alt="instagram">
+									<img class="socials__img min-src" src="./images/shared-icons/icon_inst.svg" alt="instagram">
+									<img class="socials__img socials__img_hover min-src" src="./images/shared-icons/icon_inst_hover.svg" alt="instagram">
 								</a>
 								<a href="https://facebook.com" target="_blank">
-									<img class="min-src" src="./images/shared-icons/icon_face.svg" alt="facebook">
+									<img class="socials__img min-src" src="./images/shared-icons/icon_face.svg" alt="facebook">
+									<img class="socials__img socials__img_hover min-src" src="./images/shared-icons/icon_face_hover.svg" alt="facebook">
 								</a>
 								<a href="https://twitter.com" target="_blank">
-									<img class="min-src" src="./images/shared-icons/icon_twit.svg" alt="twitter">
+									<img class="socials__img min-src" src="./images/shared-icons/icon_twit.svg" alt="twitter">
+									<img class="socials__img socials__img_hover min-src" src="./images/shared-icons/icon_twit_hover.svg" alt="twitter">
 								</a>
 							</div>
 						</div>
@@ -102,7 +111,7 @@
 
 				<section class="dishes">
 					<div class="dishes__wrapper">
-						<h2 class="heading">Меню</h2>
+						<h2 class="heading" id="menu">Меню</h2>
 						<p class="description">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 							Nullam pretium netus urna hendrerit convallis aliquam consequat turpis.
@@ -154,7 +163,7 @@
 
 				<section class="delivery">
 					<div class="delivery__wrapper wrapper">
-						<h2 class="heading">Удобные способы доставки</h2>
+						<h2 class="heading" id="delivery">Удобные способы доставки</h2>
 						<p class="description">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 							Nullam pretium netus urna hendrerit convallis aliquam consequat turpis.
@@ -204,9 +213,13 @@
 			<footer class="footer">
 				<div class="footer__wrapper wrapper">
 					<div class="footer__row">
-						<img src="./images/shared-icons/logo.svg" alt="logo" class="footer__logo logo min-src">
-						<div class="footer__second-side">
-							<p class="footer__number">+38 (050) 456-99-98</p>
+						<a href="#home">
+							<img src="./images/shared-icons/logo.svg" alt="logo" class="footer__logo logo min-src">
+						</a>
+						<div class="footer__second-side" id="contacts">
+							<a class="navigation__phone" href="tel:5554280940">
+								<p class="footer__number">+38 (050) 456-99-98</p>
+							</a>
 							<div class="footer__social">
 								<a href="https://web.telegram.org" target="_blank">
 									<img class="min-src" src="./images/shared-icons/footer_telegram.svg" alt="telegram">
@@ -240,6 +253,7 @@
 				</div>
 			</footer>
 		</div>
+		<script src="scripts/navigation.js"></script>
 		<script src="scripts/preloader.js"></script>
 		<script src="scripts/dishes-scroll.js"></script>
 	</body>
