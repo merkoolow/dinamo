@@ -28,6 +28,8 @@ class Preloader {
 		'images/proposal/ellipse_dish_2_min.png',
 		'images/proposal/ellipse_dish_3_min.png',
 
+		'images/dishes/slide_arrow.svg',
+		'images/dishes/slide_arrow_hover.svg',
 		'images/dishes/bakery_min.jpg',
 		'images/dishes/drinks_min.jpg',
 		'images/dishes/grill_dishes_min.jpg',

@@ -70,7 +70,7 @@
 							В нашем ресторане Вы найдете лучшие блюда приготвленные по старинным рецептам грузинской кухни.
 							Потрясающий вкус блюд перенесет Вас к атмосферу невероятного Тбилисси не выходя из дома.
 						</p>
-						<button class="button button_primary">перейти к меню</button>
+						<a class="button button_primary" href="#menu">перейти к меню</a>
 					</section>
 				</div>
 			</header>
@@ -102,7 +102,7 @@
 								<p class="proposal__card-description">Здесь будет какой то текст, возможно назване блюда</p>
 							</div>
 						</div>
-						<button class="button button_primary">перейти к доставке</button>
+						<a class="button button_primary" href="#delivery">перейти к доставке</a>
 						<img class="proposal__decoration proposal__decoration_1 min-src" src="./images/decorations/decoration_tomato_min.png" alt="tomato">
 						<img class="proposal__decoration proposal__decoration_2 min-src" src="./images/decorations/decoration_bas_min.png" alt="salad">
 						<img class="proposal__decoration proposal__decoration_3 min-src" src="./images/decorations/decoration_blur_min.png" alt="highlight">
@@ -116,48 +116,60 @@
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 							Nullam pretium netus urna hendrerit convallis aliquam consequat turpis.
 						</p>
-						<ul class="dishes__scroll-list" id="dishesScroll">
-							<li class="dishes__card">
-								<img class="dishes__img min-src" src="./images/dishes/bakery_min.jpg" alt="bakery">
-								<button class="dishes__button button">открыть меню</button>
-								<h3>Выпечка</h3>
-							</li>
-							<li class="dishes__card">
-								<img class="dishes__img min-src" src="./images/dishes/drinks_min.jpg" alt="drinks">
-								<button class="dishes__button button">открыть меню</button>
-								<h3>Напитки</h3>
-							</li>
-							<li class="dishes__card">
-								<img class="dishes__img min-src" src="./images/dishes/grill_dishes_min.jpg" alt="grill dishes">
-								<button class="dishes__button button">открыть меню</button>
-								<h3>Блюда на мангале</h3>
-							</li>
-							<li class="dishes__card">
-								<img class="dishes__img min-src" src="./images/dishes/hot_dishes_min.jpg" alt="hot dishes">
-								<button class="dishes__button button">открыть меню</button>
-								<h3>Горячие блюда</h3>
-							</li>
-							<li class="dishes__card">
-								<img class="dishes__img min-src" src="./images/dishes/hot_drinks_min.jpg" alt="hot drinks">
-								<button class="dishes__button button">открыть меню</button>
-								<h3>Горячие напитки</h3>
-							</li>
-							<li class="dishes__card">
-								<img class="dishes__img min-src" src="./images/dishes/salads_min.jpg" alt="salads">
-								<button class="dishes__button button">открыть меню</button>
-								<h3>Салаты</h3>
-							</li>
-							<li class="dishes__card">
-								<img class="dishes__img min-src" src="./images/dishes/sauces_min.jpg" alt="sauces">
-								<button class="dishes__button button">открыть меню</button>
-								<h3>Соусы</h3>
-							</li>
-							<li class="dishes__card">
-								<img class="dishes__img min-src" src="./images/dishes/soups_min.jpg" alt="soups">
-								<button class="dishes__button button">открыть меню</button>
-								<h3>Супы</h3>
-							</li>
-						</ul>
+						<div class="dishes__list-container">
+							<button class="dishes__slide dishes__slide_left" id="dishedSlideLeft" data-direction="left">
+								<div class="dishes__slide-circle"></div>
+								<img src="./images/dishes/slide_arrow.svg" alt="slide" class="dishes__slide-icon min-src"/>
+								<img src="./images/dishes/slide_arrow_hover.svg" alt="slide" class="dishes__slide-icon dishes__slide-icon_hover min-src"/>
+							</button>
+							<ul class="dishes__scroll-list" id="dishesScroll">
+								<li class="dishes__card">
+									<img class="dishes__img min-src" src="./images/dishes/bakery_min.jpg" alt="bakery">
+									<button class="dishes__button button">открыть меню</button>
+									<h3>Выпечка</h3>
+								</li>
+								<li class="dishes__card">
+									<img class="dishes__img min-src" src="./images/dishes/drinks_min.jpg" alt="drinks">
+									<button class="dishes__button button">открыть меню</button>
+									<h3>Напитки</h3>
+								</li>
+								<li class="dishes__card">
+									<img class="dishes__img min-src" src="./images/dishes/grill_dishes_min.jpg" alt="grill dishes">
+									<button class="dishes__button button">открыть меню</button>
+									<h3>Блюда на мангале</h3>
+								</li>
+								<li class="dishes__card">
+									<img class="dishes__img min-src" src="./images/dishes/hot_dishes_min.jpg" alt="hot dishes">
+									<button class="dishes__button button">открыть меню</button>
+									<h3>Горячие блюда</h3>
+								</li>
+								<li class="dishes__card">
+									<img class="dishes__img min-src" src="./images/dishes/hot_drinks_min.jpg" alt="hot drinks">
+									<button class="dishes__button button">открыть меню</button>
+									<h3>Горячие напитки</h3>
+								</li>
+								<li class="dishes__card">
+									<img class="dishes__img min-src" src="./images/dishes/salads_min.jpg" alt="salads">
+									<button class="dishes__button button">открыть меню</button>
+									<h3>Салаты</h3>
+								</li>
+								<li class="dishes__card">
+									<img class="dishes__img min-src" src="./images/dishes/sauces_min.jpg" alt="sauces">
+									<button class="dishes__button button">открыть меню</button>
+									<h3>Соусы</h3>
+								</li>
+								<li class="dishes__card">
+									<img class="dishes__img min-src" src="./images/dishes/soups_min.jpg" alt="soups">
+									<button class="dishes__button button">открыть меню</button>
+									<h3>Супы</h3>
+								</li>
+							</ul>
+							<button class="dishes__slide dishes__slide_right" id="dishedSlideRight" data-direction="right">
+								<div class="dishes__slide-circle"></div>
+								<img src="./images/dishes/slide_arrow.svg" alt="slide" class="dishes__slide-icon min-src"/>
+								<img src="./images/dishes/slide_arrow_hover.svg" alt="slide" class="dishes__slide-icon dishes__slide-icon_hover min-src"/>
+							</button>
+						</div>
 					</div>
 				</section>
 

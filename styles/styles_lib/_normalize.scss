@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,6 +12,7 @@
 body {
 	background: #080808;
 	overflow-x: hidden;
+	width: 100vw;
 }
 
 ul {
@@ -32,4 +37,25 @@ button,
 select,
 a {
 	-webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgba(222, 222, 222, 0.1);
+	border-radius: 5px;
+	border: 1px solid rgba(200, 200, 200, 0.2);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
 }
