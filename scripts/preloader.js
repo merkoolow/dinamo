@@ -9,6 +9,10 @@ class Preloader {
 		'images/decorations/decoration_tomato_min.png',
 		'images/decorations/decoration_blur_min.png',
 
+		'images/shared-icons/footer_telegram.svg',
+		'images/shared-icons/footer_viber.svg',
+		'images/shared-icons/footer_whatsapp.svg',
+		'images/shared-icons/git_icon.png',
 		'images/shared-icons/icon_face.svg',
 		'images/shared-icons/icon_inst.svg',
 		'images/shared-icons/icon_phone.svg',
@@ -28,19 +32,19 @@ class Preloader {
 		'images/dishes/sauces_min.jpg',
 		'images/dishes/soups_min.jpg',
 
-		'images/delivery/delivery_food_max.jpg',
+		'images/delivery/delivery_food_min.jpg',
 		'images/delivery/delivery_icon_1.png',
 		'images/delivery/delivery_icon_2.png',
 		'images/delivery/delivery_icon_3.svg',
 
-		'images/gallery/gal1_max.jpg',
-		'images/gallery/gal2_max.jpg',
-		'images/gallery/gal3_max.jpg',
-		'images/gallery/gal4_max.jpg',
-		'images/gallery/gal5_max.jpg',
-		'images/gallery/gal6_max.jpg',
-		'images/gallery/gal7_max.jpg',
-		'images/gallery/gal8_max.jpg'
+		'images/gallery/gal1_min.jpg',
+		'images/gallery/gal2_min.jpg',
+		'images/gallery/gal3_min.jpg',
+		'images/gallery/gal4_min.jpg',
+		'images/gallery/gal5_min.jpg',
+		'images/gallery/gal6_min.jpg',
+		'images/gallery/gal7_min.jpg',
+		'images/gallery/gal8_min.jpg'
 	];
 
 	maxImages = [
@@ -66,14 +70,14 @@ class Preloader {
 
 		'images/delivery/delivery_food_max.jpg',
 
-		'images/gallery/gal1_min.jpg',
-		'images/gallery/gal2_min.jpg',
-		'images/gallery/gal3_min.jpg',
-		'images/gallery/gal4_min.jpg',
-		'images/gallery/gal5_min.jpg',
-		'images/gallery/gal6_min.jpg',
-		'images/gallery/gal7_min.jpg',
-		'images/gallery/gal8_min.jpg'
+		'images/gallery/gal1_max.jpg',
+		'images/gallery/gal2_max.jpg',
+		'images/gallery/gal3_max.jpg',
+		'images/gallery/gal4_max.jpg',
+		'images/gallery/gal5_max.jpg',
+		'images/gallery/gal6_max.jpg',
+		'images/gallery/gal7_max.jpg',
+		'images/gallery/gal8_max.jpg'
 	];
 
 	preloaderResources = [];

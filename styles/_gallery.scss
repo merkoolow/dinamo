@@ -2,11 +2,13 @@
 	margin-bottom: 40px;
 
 	&__wrapper {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		width: 100%;
+		gap: 2px;
 	}
 
 	&__row {
@@ -17,5 +19,12 @@
 	&__img {
 		display: block;
 		width: 358px;
+		transition: transform, opasity, 300ms ease-in-out;
+		opacity: 0.8;
+	}
+
+	&__img:hover {
+		transform: scale(0.95);
+		opacity: 1;
 	}
 }
