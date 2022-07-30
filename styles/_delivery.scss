@@ -14,6 +14,10 @@
 		@include desktop-s {
 			padding: 50px 100px 50px 100px;
 		}
+
+		@include tablet {
+			padding: 50px;
+		}
 	}
 
 	&__content {
@@ -30,18 +34,27 @@
 		display: flex;
 		flex-direction: column;
 		gap: 50px;
+
+		@include tablet {
+			width: 100%;
+			gap: 50px;
+		}
 	}
 
 	&__shipping {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		@include tablet {
+			flex-direction: column;
+		}
 	}
 
 	&__img {
-		width: 120px;
 		z-index: 1;
 		position: relative;
+		display: block;
 
 		&:after {
 			position: absolute;
@@ -55,6 +68,10 @@
 			border-radius: 50%;
 			opacity: 0.5;
 			transition: opacity 400ms ease-in-out;
+
+			@include tablet {
+				display: none;
+			}
 		}
 
 		&:hover:after {
@@ -70,6 +87,12 @@
 				min-width: 80px;
 				height: 80px;
 			}
+
+			@include tablet {
+				min-width: 140px;
+				height: 140px;
+				margin-bottom: 30px;
+			}
 		}
 
 		&_spiral {
@@ -81,6 +104,12 @@
 				min-width: 80px;
 				height: 80px;
 			}
+
+			@include tablet {
+				min-width: 140px;
+				height: 140px;
+				margin-bottom: 30px;
+			}
 		}
 
 		&_glovo {
@@ -91,6 +120,12 @@
 			@include desktop-s {
 				min-width: 80px;
 				height: 80px;
+			}
+
+			@include tablet {
+				min-width: 140px;
+				height: 140px;
+				margin-bottom: 30px;
 			}
 		}
 	}
@@ -112,6 +147,12 @@
 		@include desktop-s {
 			font-size: 16px;
 		}
+
+		@include tablet {
+			font-size: 18px;
+			text-align: center;
+			margin-left: 0;
+		}
 	}
 
 	&__img-big {
@@ -123,6 +164,10 @@
 			width: 50%;
 			height: min-content;
 		}
+
+		@include tablet {
+			display: none;
+		}
 	}
 
 	&__decoration {
@@ -132,18 +177,39 @@
 			left: -170px;
 			top: 0;
 			transform: rotate(-78deg);
+
+			@include tablet {
+				left: 0;
+				top: 0;
+				width: 18vw;
+				transform: translateX(-60%) rotate(-78deg);
+			}
 		}
 
 		&_2 {
 			right: -160px;
 			bottom: -90px;
 			transform: rotate(102deg);
+
+			@include tablet {
+				right: 0;
+				bottom: 0;
+				width: 18vw;
+				transform: translate(55%, 50%) rotate(102deg);
+			}
 		}
 
 		&_3 {
 			left: -75px;
 			bottom: 20px;
 			transform: rotate(20deg);
+
+			@include tablet {
+				left: 0;
+				bottom: 0;
+				width: 18vw;
+				transform: translate(30%, 50%) rotate(20deg);
+			}
 		}
 	}
 }

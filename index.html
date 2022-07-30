@@ -235,7 +235,7 @@
 				</nav>
 
 				<section class="header__content">
-					<h1>Попробуй лучшую <span>грузинскую</span> кухню в Киеве.</h1>
+					<h1><nobr>Попробуй лучшую</nobr> <nobr><span>грузинскую</span> кухню</nobr> <nobr>в Киеве.</nobr></h1>
 					<p>
 						В нашем ресторане Вы найдете лучшие блюда приготвленные по старинным рецептам грузинской кухни.
 						Потрясающий вкус блюд перенесет Вас к атмосферу невероятного Тбилисси не выходя из дома.
@@ -281,7 +281,7 @@
 				<section class="dishes">
 					<div class="dishes__wrapper">
 						<h2 class="heading" id="menu">Меню</h2>
-						<p class="description">
+						<p class="description dishes__description">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 							Nullam pretium netus urna hendrerit convallis aliquam consequat turpis.
 						</p>
@@ -374,18 +374,14 @@
 				</section>
 
 				<section class="gallery">
-						<div class="gallery__row">
-							<img src="./images/gallery/gal1_min.jpg" alt="food" class="gallery__img min-src">
-							<img src="./images/gallery/gal2_min.jpg" alt="food" class="gallery__img min-src">
-							<img src="./images/gallery/gal3_min.jpg" alt="food" class="gallery__img min-src">
-							<img src="./images/gallery/gal4_min.jpg" alt="food" class="gallery__img min-src">
-						</div>
-						<div class="gallery__row">
-							<img src="./images/gallery/gal5_min.jpg" alt="food" class="gallery__img min-src">
-							<img src="./images/gallery/gal6_min.jpg" alt="food" class="gallery__img min-src">
-							<img src="./images/gallery/gal7_min.jpg" alt="food" class="gallery__img min-src">
-							<img src="./images/gallery/gal8_min.jpg" alt="food" class="gallery__img min-src">
-						</div>
+					<img src="./images/gallery/gal1_min.jpg" alt="food" class="gallery__img min-src">
+					<img src="./images/gallery/gal2_min.jpg" alt="food" class="gallery__img min-src">
+					<img src="./images/gallery/gal3_min.jpg" alt="food" class="gallery__img min-src">
+					<img src="./images/gallery/gal4_min.jpg" alt="food" class="gallery__img min-src">
+					<img src="./images/gallery/gal5_min.jpg" alt="food" class="gallery__img min-src">
+					<img src="./images/gallery/gal6_min.jpg" alt="food" class="gallery__img min-src">
+					<img src="./images/gallery/gal7_min.jpg" alt="food" class="gallery__img min-src">
+					<img src="./images/gallery/gal8_min.jpg" alt="food" class="gallery__img min-src">
 				</section>
 			</main>
 
@@ -435,18 +431,18 @@
 				<span></span>
 			</a>
 		</div>
-		<script>
-			window.addEventListener('load', () => {
-				setTimeout(() => {
-					const uselessStyle = document.getElementById('offTransition');
-					uselessStyle.remove();
-				}, 500);
-			});
-		</script>
 		<script src="scripts/navigation.js"></script>
 		<script src="scripts/preloader.js"></script>
 		<script src="scripts/dishes-scroll.js"></script>
 		<script src="scripts/menu.js"></script>
 		<script src="scripts/burger.js"></script>
+		<script>
+			window.addEventListener('load', () => {
+				setTimeout(() => {
+					const uselessStyle = document.getElementById('offTransition');
+					uselessStyle.remove();
+				}, 800);
+			});
+		</script>
 	</body>
 </html>

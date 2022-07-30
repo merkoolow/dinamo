@@ -153,6 +153,11 @@
 	line-height: 70px;
 	color: $primary-font-color;
 	margin-bottom: 25px;
+
+	@include tablet {
+		font-size: 36px;
+		line-height: 50px;
+	}
 }
 
 .description {
@@ -163,6 +168,10 @@
 	line-height: 22px;
 	color: $primary-font-color;
 	margin-bottom: 60px;
+
+	@include tablet {
+		margin-bottom: 30px;
+	}
 }
 
 .main {

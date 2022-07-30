@@ -20,6 +20,12 @@
 		}
 	}
 
+	&__description {
+		@include tablet {
+			max-width: calc(100% - 100px);
+		}
+	}
+
 	&__list-container {
 		position: relative;
 		width: 100%;
@@ -34,6 +40,10 @@
 		height: 80px;
 		cursor: pointer;
 		top: calc(70% - 10px);
+
+		@include tablet {
+			display: none;
+		}
 
 		&_left {
 			left: 100px;
@@ -121,6 +131,11 @@
 		flex-shrink: 0;
 		position: relative;
 
+		@include tablet {
+			width: 196.8px;
+			height: 304.8px;
+		}
+
 		&:after {
 			content: '';
 			background-color: rgba(0, 0, 0, .6);
@@ -151,6 +166,8 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
+		width: 100%;
+		height: 100%;
 		z-index: 1;
 	}
 
@@ -182,6 +199,11 @@
 			box-shadow: 11px 11px 11px -7px rgba(0, 0, 0, 0.83),
 			inset 0 0 20px 7px rgba(0, 0, 0, 0.5);
 		}
+
+		@include tablet {
+			width: 170px;
+			height: 60px;
+		}
 	}
 
 	h3 {
@@ -195,6 +217,10 @@
 		opacity: 1;
 		z-index: 3;
 		color: $primary-font-color;
+
+		@include tablet {
+			font-size: 18px;
+		}
 	}
 
 	::-webkit-scrollbar {

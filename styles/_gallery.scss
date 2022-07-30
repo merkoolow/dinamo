@@ -3,28 +3,29 @@
 .gallery {
 	width: 100%;
 	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 2px;
+	display: grid;
+	grid-gap: 2px;
+	grid-template-columns: repeat(4, 25%);
+
 	@include wrapper(80px, 0px, 20px, 0px, 1920px);
 
 	@include desktop-s {
 		@include wrapper(50px, 0px, 20px, 0px, 1920px);
 	}
 
-	&__row {
-		display: flex;
-		gap: 2px;
-		width: 100%;
+	@include tablet {
+		grid-template-columns: repeat(2, 50%);
 	}
 
 	&__img {
+		width: 100%;
 		display: block;
-		width: 25%;
 		transition: transform, opasity, 300ms ease-in-out;
 		opacity: 0.8;
+
+		@include tablet {
+			opacity: 1;
+		}
 	}
 
 	&__img:hover {

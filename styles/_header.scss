@@ -15,7 +15,7 @@
 	}
 
 	@include tablet {
-		@include wrapper(10px, 50px, 100px, 50px, 1920px)
+		@include wrapper(10px, 50px, 50px, 50px, 1920px);
 	}
 
 	&:after {
@@ -35,6 +35,11 @@
 		@include desktop-s {
 			margin-bottom: 80px;
 		}
+
+		@include tablet {
+			width: calc(100% - 45px);
+			margin-bottom: 50px;
+		}
 	}
 
 	&__content {
@@ -49,6 +54,11 @@
 			line-height: 70px;
 			margin-bottom: 25px;
 			color: $primary-font-color;
+
+			@include tablet {
+				line-height: 50px;
+				font-size: 40px;
+			}
 		}
 
 		span {
@@ -57,6 +67,11 @@
 			font-size: 55px;
 			line-height: 70px;
 			color: $expensive-font-color;
+
+			@include tablet {
+				line-height: 50px;
+				font-size: 40px;
+			}
 		}
 
 		p {
