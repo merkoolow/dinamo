@@ -6,6 +6,7 @@
 	height: 800px;
 	position: relative;
 	z-index: 1;
+	@include wrapper(10px, 100px, 176px, 100px, 1920px);
 
 	&:after {
 		left: 0;
@@ -19,11 +20,6 @@
 	}
 
 	@include background-image("backgrounds/background_header_min.jpg", cover, center bottom);
-
-	&__wrapper {
-		height: 100%;
-		padding: 10px 100px 176px 100px;
-	}
 
 	&__content {
 		display: flex;

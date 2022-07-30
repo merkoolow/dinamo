@@ -1,10 +1,9 @@
+@import "styles_lib/mixins";
+
 .footer {
 	background-color: #000000;
-
- &__wrapper {
-	 width: 100%;
-	 padding: 20px 100px 30px 100px;
- }
+	width: 100%;
+	@include wrapper(20px, 100px, 30px, 100px, 1920px);
 
 	&__row{
 		display: flex;

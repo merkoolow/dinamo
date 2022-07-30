@@ -51,7 +51,16 @@ class Preloader {
 		'images/gallery/gal5_min.jpg',
 		'images/gallery/gal6_min.jpg',
 		'images/gallery/gal7_min.jpg',
-		'images/gallery/gal8_min.jpg'
+		'images/gallery/gal8_min.jpg',
+
+		'images/menu/menu_1_min.jpg',
+		'images/menu/menu_2_min.jpg',
+		'images/menu/menu_3_min.jpg',
+		'images/menu/menu_4_min.jpg',
+		'images/menu/menu_5_min.jpg',
+		'images/menu/menu_6_min.jpg',
+		'images/menu/menu_7_min.jpg',
+		'images/menu/menu_8_min.jpg'
 	];
 
 	maxImages = [
@@ -84,7 +93,16 @@ class Preloader {
 		'images/gallery/gal5_max.jpg',
 		'images/gallery/gal6_max.jpg',
 		'images/gallery/gal7_max.jpg',
-		'images/gallery/gal8_max.jpg'
+		'images/gallery/gal8_max.jpg',
+
+		'images/menu/menu_1_max.jpg',
+		'images/menu/menu_2_max.jpg',
+		'images/menu/menu_3_max.jpg',
+		'images/menu/menu_4_max.jpg',
+		'images/menu/menu_5_max.jpg',
+		'images/menu/menu_6_max.jpg',
+		'images/menu/menu_7_max.jpg',
+		'images/menu/menu_8_max.jpg'
 	];
 
 	preloaderResources = [];
