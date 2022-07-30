@@ -1,22 +1,46 @@
 @import "styles_lib/variables";
+@import "styles_lib/mixins";
 
 .navigation {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	display: grid;
 	margin-bottom: 130px;
+	grid-template-areas:
+		"tl tc tr"
+		"cl cc cr";
+	grid-template-columns: max-content 1fr max-content;
+
+	@include desktop-s {
+		grid-template-areas:
+			"tl tr tr"
+			"cc cc cc";
+	}
 
 	&__logo {
 		width: 133px;
 		height: 66px;
+		grid-area: tl;
+		justify-self: start;
+
+		@include desktop-s {
+			grid-area: tl;
+		}
 	}
 
 	&__list {
 		display: flex;
+		justify-content: center;
+		width: 100%;
+		align-self: center;
+		justify-self: center;
+		grid-area: tc;
+
+		@include desktop-s {
+			grid-area: cc;
+		}
 	}
 
-	&__item:not(:last-child) {
-		margin-right: 40px;
+	&__list > &__item:not(:first-child) {
+		margin-left: 40px;
 	}
 
 	&__link {
@@ -35,6 +59,8 @@
 	&__second-side {
 		display: flex;
 		align-items: center;
+		justify-self: end;
+		grid-area: tr;
 	}
 
 	&__socials {
