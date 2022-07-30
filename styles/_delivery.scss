@@ -8,14 +8,22 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		padding: 80px 100px 80px 80px;
+		padding: 80px 100px 80px 100px;
 		position: relative;
+
+		@include desktop-s {
+			padding: 50px 100px 50px 100px;
+		}
 	}
 
 	&__content {
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
+
+		@include desktop-s {
+			align-items: center;
+		}
 	}
 
 	&__list {
@@ -31,7 +39,6 @@
 	}
 
 	&__img {
-		min-width: 120px;
 		width: 120px;
 		z-index: 1;
 		position: relative;
@@ -56,21 +63,35 @@
 
 		&_dinamo {
 			@include background-image("delivery/delivery_icon_1.png", cover, center);
-			width: 120px;
+			min-width: 120px;
 			height: 120px;
+
+			@include desktop-s {
+				min-width: 80px;
+				height: 80px;
+			}
 		}
 
 		&_spiral {
 			@include background-image("delivery/delivery_icon_2.png", cover, center);
-			width: 120px;
+			min-width: 120px;
 			height: 120px;
+
+			@include desktop-s {
+				min-width: 80px;
+				height: 80px;
+			}
 		}
 
 		&_glovo {
 			@include background-image("delivery/delivery_icon_3.svg", cover, center);
-			background-size: contain;
-			width: 120px;
+			min-width: 120px;
 			height: 120px;
+
+			@include desktop-s {
+				min-width: 80px;
+				height: 80px;
+			}
 		}
 	}
 
@@ -87,11 +108,21 @@
 		color: $primary-font-color;
 		text-align: left;
 		margin-left: 30px;
+
+		@include desktop-s {
+			font-size: 16px;
+		}
 	}
 
 	&__img-big {
 		height: 100%;
 		margin-left: 30px;
+
+		@include desktop-s {
+			margin-left: 60px;
+			width: 50%;
+			height: min-content;
+		}
 	}
 
 	&__decoration {

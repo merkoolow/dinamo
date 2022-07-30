@@ -1,7 +1,6 @@
 @import "styles_lib/mixins";
 
 .gallery {
-	@include wrapper(80px, 0px, 20px, 0px, 1920px);
 	width: 100%;
 	position: relative;
 	display: flex;
@@ -9,6 +8,11 @@
 	align-items: center;
 	justify-content: center;
 	gap: 2px;
+	@include wrapper(80px, 0px, 20px, 0px, 1920px);
+
+	@include desktop-s {
+		@include wrapper(50px, 0px, 20px, 0px, 1920px);
+	}
 
 	&__row {
 		display: flex;

@@ -6,7 +6,13 @@
 	height: 800px;
 	position: relative;
 	z-index: 1;
+	@include background-image("backgrounds/background_header_min.jpg", cover, right bottom);
 	@include wrapper(10px, 100px, 176px, 100px, 1920px);
+
+	@include desktop-s {
+		height: auto;
+		@include wrapper(10px, 100px, 100px, 100px, 1920px);
+	}
 
 	&:after {
 		left: 0;
@@ -19,7 +25,13 @@
 		z-index: -1;
 	}
 
-	@include background-image("backgrounds/background_header_min.jpg", cover, center bottom);
+	&__navigation {
+		margin-bottom: 130px;
+
+		@include desktop-s {
+			margin-bottom: 80px;
+		}
+	}
 
 	&__content {
 		display: flex;

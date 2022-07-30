@@ -3,7 +3,6 @@
 
 .navigation {
 	display: grid;
-	margin-bottom: 130px;
 	grid-template-areas:
 		"tl tc tr"
 		"cl cc cr";
@@ -12,7 +11,7 @@
 	@include desktop-s {
 		grid-template-areas:
 			"tl tr tr"
-			"cc cc cc";
+			".  .  cr";
 	}
 
 	&__logo {
@@ -35,12 +34,20 @@
 		grid-area: tc;
 
 		@include desktop-s {
-			grid-area: cc;
+			width: max-content;
+			justify-self: end;
+			grid-area: tr;
 		}
 	}
 
 	&__list > &__item:not(:first-child) {
 		margin-left: 40px;
+	}
+
+	&__list > &__item:last-child {
+		.navigation__link {
+			padding-right: 0;
+		}
 	}
 
 	&__link {
@@ -61,6 +68,10 @@
 		align-items: center;
 		justify-self: end;
 		grid-area: tr;
+
+		@include desktop-s {
+			grid-area: cr;
+		}
 	}
 
 	&__socials {
