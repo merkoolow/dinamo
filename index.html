@@ -1,153 +1,190 @@
 <!doctype html>
 <html lang="en">
 	<head>
+
 		<meta charset="UTF-8">
 		<meta name="viewport"
 		      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Georgian Restaurant</title>
 		<link rel="stylesheet" href="./styles.css">
+		<style id="offTransition">
+			* {
+				transition: none !important;
+			}
+		</style>
 	</head>
 	<body class="overflow-hidden">
-		<div class="menu menu_closed" id="popupMenu">
-			<h2 class="heading menu__heading">Меню</h2>
-			<button class="menu__close" id="popupMenuClose"></button>
-
-			<div class="menu__images">
-				<img src="./images/menu/menu_1_min.jpg" alt="dish" class="min-src">
-				<img src="./images/menu/menu_2_min.jpg" alt="dish" class="min-src">
-				<img src="./images/menu/menu_3_min.jpg" alt="dish" class="min-src">
-				<img src="./images/menu/menu_4_min.jpg" alt="dish" class="min-src">
-			</div>
-
-			<h3 class="menu__section-heading" id="popupMenuSectionHeading">Холодные закуски</h3>
-
-			<ul class="menu__list">
-				<li class="menu__item">
-					<h4 class="menu__item-title">Сациви из курицы</h4>
-					<span class="menu__item-price">90 ₴</span>
-					<span class="menu__item-weight">200гр.</span>
-					<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
-					<p class="menu__item-composition">
-						Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
-						2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
-					</p>
-					<hr class="menu__delimiter" />
-				</li>
-				<li class="menu__item">
-					<h4 class="menu__item-title">Сациви из курицы</h4>
-					<span class="menu__item-price">90 ₴</span>
-					<span class="menu__item-weight">200гр.</span>
-					<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
-					<p class="menu__item-composition">
-						Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
-						2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
-					</p>
-					<hr class="menu__delimiter">
-				</li>
-				<li class="menu__item">
-					<h4 class="menu__item-title">Сациви из курицы</h4>
-					<span class="menu__item-price">90 ₴</span>
-					<span class="menu__item-weight">200гр.</span>
-					<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
-					<p class="menu__item-composition">
-						Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
-						2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
-					</p>
-					<hr class="menu__delimiter">
-				</li>
-				<li class="menu__item">
-					<h4 class="menu__item-title">Сациви из курицы</h4>
-					<span class="menu__item-price">90 ₴</span>
-					<span class="menu__item-weight">200гр.</span>
-					<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
-					<p class="menu__item-composition">
-						Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
-						2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
-					</p>
-					<hr class="menu__delimiter">
-				</li>
-				<li class="menu__item">
-					<h4 class="menu__item-title">Сациви из курицы</h4>
-					<span class="menu__item-price">90 ₴</span>
-					<span class="menu__item-weight">200гр.</span>
-					<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
-					<p class="menu__item-composition">
-						Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
-						2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
-					</p>
-					<hr class="menu__delimiter">
-				</li>
-				<li class="menu__item">
-					<h4 class="menu__item-title">Сациви из курицы</h4>
-					<span class="menu__item-price">90 ₴</span>
-					<span class="menu__item-weight">200гр.</span>
-					<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
-					<p class="menu__item-composition">
-						Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
-						2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
-					</p>
-					<hr class="menu__delimiter">
-				</li>
-				<li class="menu__item">
-					<h4 class="menu__item-title">Сациви из курицы</h4>
-					<span class="menu__item-price">90 ₴</span>
-					<span class="menu__item-weight">200гр.</span>
-					<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
-					<p class="menu__item-composition">
-						Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
-						2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
-					</p>
-					<hr class="menu__delimiter">
-				</li>
-				<li class="menu__item">
-					<h4 class="menu__item-title">Сациви из курицы</h4>
-					<span class="menu__item-price">90 ₴</span>
-					<span class="menu__item-weight">200гр.</span>
-					<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
-					<p class="menu__item-composition">
-						Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
-						2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
-					</p>
-					<hr class="menu__delimiter">
-				</li>
-				<li class="menu__item">
-					<h4 class="menu__item-title">Сациви из курицы</h4>
-					<span class="menu__item-price">90 ₴</span>
-					<span class="menu__item-weight">200гр.</span>
-					<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
-					<p class="menu__item-composition">
-						Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
-						2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
-					</p>
-					<hr class="menu__delimiter">
-				</li>
-				<li class="menu__item">
-					<h4 class="menu__item-title">Сациви из курицы</h4>
-					<span class="menu__item-price">90 ₴</span>
-					<span class="menu__item-weight">200гр.</span>
-					<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
-					<p class="menu__item-composition">
-						Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
-						2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
-					</p>
-					<hr class="menu__delimiter">
-				</li>
-			</ul>
-
-			<div class="menu__images">
-				<img src="./images/menu/menu_5_min.jpg" alt="dish" class="min-src">
-				<img src="./images/menu/menu_6_min.jpg" alt="dish" class="min-src">
-				<img src="./images/menu/menu_7_min.jpg" alt="dish" class="min-src">
-				<img src="./images/menu/menu_8_min.jpg" alt="dish" class="min-src">
-			</div>
-		</div>
-
 		<div class="loader hidden" id="loader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 
 		<div class="root hidden" id="root">
+			<div class="burger burger_hidden" id="burger">
+				<div class="burger__button burger__button_open burger__button_enabled" id="burgerButtonOpen">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="burger__button burger__button_close burger__button_disabled" id="burgerButtonClose">
+					<span></span>
+					<span></span>
+				</div>
+				<menu class="burger__menu burger__menu_closed">
+					<ul class="burger__navigation-list">
+						<li class="burger__navigation-item">
+							<a href="#home" class="burger__navigation_link">главная</a>
+						</li>
+						<li class="burger__navigation-item">
+							<a href="#menu" class="burger__navigation_link">меню</a>
+						</li>
+						<li class="burger__navigation-item">
+							<a href="#delivery" class="burger__navigation_link">доставка</a>
+						</li>
+						<li class="burger__navigation-item">
+							<a href="#contacts" class="burger__navigation_link">контакты</a>
+						</li>
+						<li class="burger__navigation-item">
+							<a href="#menu" class="burger__navigation_link">акции</a>
+						</li>
+					</ul>
+				</menu>
+			</div>
+
+			<div class="menu menu_closed" id="popupMenu">
+				<h2 class="heading menu__heading">Меню</h2>
+				<button class="menu__close" id="popupMenuClose"></button>
+
+				<div class="menu__images">
+					<img src="./images/menu/menu_1_min.jpg" alt="dish" class="min-src">
+					<img src="./images/menu/menu_2_min.jpg" alt="dish" class="min-src">
+					<img src="./images/menu/menu_3_min.jpg" alt="dish" class="min-src">
+					<img src="./images/menu/menu_4_min.jpg" alt="dish" class="min-src">
+				</div>
+
+				<h3 class="menu__section-heading" id="popupMenuSectionHeading">Холодные закуски</h3>
+
+				<ul class="menu__list">
+					<li class="menu__item">
+						<h4 class="menu__item-title">Сациви из курицы</h4>
+						<span class="menu__item-price">90 ₴</span>
+						<span class="menu__item-weight">200гр.</span>
+						<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
+						<p class="menu__item-composition">
+							Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
+							2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+						</p>
+						<hr class="menu__delimiter" />
+					</li>
+					<li class="menu__item">
+						<h4 class="menu__item-title">Сациви из курицы</h4>
+						<span class="menu__item-price">90 ₴</span>
+						<span class="menu__item-weight">200гр.</span>
+						<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
+						<p class="menu__item-composition">
+							Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
+							2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+						</p>
+						<hr class="menu__delimiter">
+					</li>
+					<li class="menu__item">
+						<h4 class="menu__item-title">Сациви из курицы</h4>
+						<span class="menu__item-price">90 ₴</span>
+						<span class="menu__item-weight">200гр.</span>
+						<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
+						<p class="menu__item-composition">
+							Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
+							2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+						</p>
+						<hr class="menu__delimiter">
+					</li>
+					<li class="menu__item">
+						<h4 class="menu__item-title">Сациви из курицы</h4>
+						<span class="menu__item-price">90 ₴</span>
+						<span class="menu__item-weight">200гр.</span>
+						<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
+						<p class="menu__item-composition">
+							Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
+							2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+						</p>
+						<hr class="menu__delimiter">
+					</li>
+					<li class="menu__item">
+						<h4 class="menu__item-title">Сациви из курицы</h4>
+						<span class="menu__item-price">90 ₴</span>
+						<span class="menu__item-weight">200гр.</span>
+						<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
+						<p class="menu__item-composition">
+							Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
+							2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+						</p>
+						<hr class="menu__delimiter">
+					</li>
+					<li class="menu__item">
+						<h4 class="menu__item-title">Сациви из курицы</h4>
+						<span class="menu__item-price">90 ₴</span>
+						<span class="menu__item-weight">200гр.</span>
+						<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
+						<p class="menu__item-composition">
+							Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
+							2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+						</p>
+						<hr class="menu__delimiter">
+					</li>
+					<li class="menu__item">
+						<h4 class="menu__item-title">Сациви из курицы</h4>
+						<span class="menu__item-price">90 ₴</span>
+						<span class="menu__item-weight">200гр.</span>
+						<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
+						<p class="menu__item-composition">
+							Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
+							2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+						</p>
+						<hr class="menu__delimiter">
+					</li>
+					<li class="menu__item">
+						<h4 class="menu__item-title">Сациви из курицы</h4>
+						<span class="menu__item-price">90 ₴</span>
+						<span class="menu__item-weight">200гр.</span>
+						<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
+						<p class="menu__item-composition">
+							Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
+							2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+						</p>
+						<hr class="menu__delimiter">
+					</li>
+					<li class="menu__item">
+						<h4 class="menu__item-title">Сациви из курицы</h4>
+						<span class="menu__item-price">90 ₴</span>
+						<span class="menu__item-weight">200гр.</span>
+						<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
+						<p class="menu__item-composition">
+							Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
+							2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+						</p>
+						<hr class="menu__delimiter">
+					</li>
+					<li class="menu__item">
+						<h4 class="menu__item-title">Сациви из курицы</h4>
+						<span class="menu__item-price">90 ₴</span>
+						<span class="menu__item-weight">200гр.</span>
+						<span class="menu__item-calories">КБЖУ: 320/16/27/4</span>
+						<p class="menu__item-composition">
+							Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г; уксус винный 1,5 ст.л.; масло слив.
+							2ст.л.; соль,перец по вкусу; хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+						</p>
+						<hr class="menu__delimiter">
+					</li>
+				</ul>
+
+				<div class="menu__images">
+					<img src="./images/menu/menu_5_min.jpg" alt="dish" class="min-src">
+					<img src="./images/menu/menu_6_min.jpg" alt="dish" class="min-src">
+					<img src="./images/menu/menu_7_min.jpg" alt="dish" class="min-src">
+					<img src="./images/menu/menu_8_min.jpg" alt="dish" class="min-src">
+				</div>
+			</div>
+
 			<header class="header min-bg" id="home">
-				<nav class="header__navigation navigation">
+				<nav class="header__navigation navigation" id="mainNav">
 					<a class="navigation__logo logo" href="#home">
 						<img src="./images/shared-icons/logo.svg" alt="logo" class="logo__img min-src">
 						<img src="./images/shared-icons/logo_hover.svg" alt="logo" class="logo__img logo__img_hover min-src">
@@ -250,7 +287,7 @@
 						</p>
 						<div class="dishes__list-container">
 							<button class="dishes__slide dishes__slide_left" id="dishedSlideLeft" data-direction="left">
-								<div class="dishes__slide-circle"></div>
+								<span class="dishes__slide-circle"></span>
 								<img src="./images/dishes/slide_arrow.svg" alt="slide" class="dishes__slide-icon min-src"/>
 								<img src="./images/dishes/slide_arrow_hover.svg" alt="slide" class="dishes__slide-icon dishes__slide-icon_hover min-src"/>
 							</button>
@@ -297,7 +334,7 @@
 								</li>
 							</ul>
 							<button class="dishes__slide dishes__slide_right" id="dishedSlideRight" data-direction="right">
-								<div class="dishes__slide-circle"></div>
+								<span class="dishes__slide-circle"></span>
 								<img src="./images/dishes/slide_arrow.svg" alt="slide" class="dishes__slide-icon min-src"/>
 								<img src="./images/dishes/slide_arrow_hover.svg" alt="slide" class="dishes__slide-icon dishes__slide-icon_hover min-src"/>
 							</button>
@@ -392,10 +429,24 @@
 					<p class="footer__information">Динамо. Грузинское бистро. Все права защищены, 2021</p>
 				</div>
 			</footer>
+			<a class="scroll-top" id="scrollTopButton" href="#home">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
 		</div>
+		<script>
+			window.addEventListener('load', () => {
+				setTimeout(() => {
+					const uselessStyle = document.getElementById('offTransition');
+					uselessStyle.remove();
+				}, 500);
+			});
+		</script>
 		<script src="scripts/navigation.js"></script>
 		<script src="scripts/preloader.js"></script>
 		<script src="scripts/dishes-scroll.js"></script>
 		<script src="scripts/menu.js"></script>
+		<script src="scripts/burger.js"></script>
 	</body>
 </html>

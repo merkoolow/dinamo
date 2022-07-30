@@ -48,6 +48,14 @@
 		.navigation__link {
 			padding-right: 0;
 		}
+
+		.navigation__link:after {
+			left: calc(50% + 5px);
+		}
+
+		.navigation__link:hover:after {
+			width: calc(110% - 10px);
+		}
 	}
 
 	&__link {
@@ -57,9 +65,26 @@
 		color: $primary-font-color;
 		transition: color 200ms ease-in-out;
 		padding: 10px;
+		position: relative;
+
+		&:after {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 2px;
+			bottom: -5px;
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: $secondary-font-color;
+			transition: width 200ms ease-in-out;
+		}
 
 		&:hover {
 			color: $secondary-font-color;
+		}
+
+		&:hover:after {
+			width: calc(110% - 20px);
 		}
 	}
 

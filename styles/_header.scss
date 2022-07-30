@@ -14,6 +14,10 @@
 		@include wrapper(10px, 100px, 100px, 100px, 1920px);
 	}
 
+	@include tablet {
+		@include wrapper(10px, 50px, 100px, 50px, 1920px)
+	}
+
 	&:after {
 		left: 0;
 		top: -2px;

@@ -28,7 +28,12 @@ class Menu {
 
 		this.popup.classList.add('menu_opened');
 		this.popup.classList.remove('menu_closed');
-		document.body.style.overflowY = 'hidden';
+
+		document.getElementById('burgerButtonClose').click();
+
+		setTimeout(() => {
+			document.body.style.overflowY = 'hidden';
+		}, 250);
 	}
 
 	closeMenu() {
