@@ -17,6 +17,10 @@
 		grid-template-columns: repeat(2, 50%);
 	}
 
+	@include mobile-l {
+		@include wrapper(30px, 0, 45px, 0);
+	}
+
 	&__img {
 		width: 100%;
 		display: block;

@@ -18,6 +18,10 @@
 		@include tablet {
 			padding: 50px;
 		}
+
+		@include mobile-l {
+			padding: 30px 20px;
+		}
 	}
 
 	&__content {
@@ -184,6 +188,14 @@
 				width: 18vw;
 				transform: translateX(-60%) rotate(-78deg);
 			}
+
+			@include mobile-l {
+				left: 0;
+				bottom: 0;
+				top: unset;
+				transform: translateX(-40%) translateY(80%) rotate(0deg);
+				width: 50%;
+			}
 		}
 
 		&_2 {
@@ -197,6 +209,10 @@
 				width: 18vw;
 				transform: translate(55%, 50%) rotate(102deg);
 			}
+
+			@include mobile-l {
+				display: none;
+			}
 		}
 
 		&_3 {
@@ -209,6 +225,11 @@
 				bottom: 0;
 				width: 18vw;
 				transform: translate(30%, 50%) rotate(20deg);
+				display: none;
+			}
+
+			@include mobile-l {
+				display: none;
 			}
 		}
 	}

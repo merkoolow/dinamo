@@ -6,78 +6,8 @@
 	top: 20px;
 	z-index: 6;
 
-	&__menu {
-		position: fixed;
-		z-index: 1;
-		right: 0;
-		top: 85px;
-		width: 430px;
-		background: rgba(8, 8, 8, 1);
-		border-top-left-radius: 15px;
-		border-bottom-left-radius: 15px;
-		border: 1px solid rgba(255, 255, 255, .4);
-		box-shadow: inset 0 0 50px 7px rgba(255, 255, 255, 0);
-		padding: 30px;
-
-		@include tablet {
-			width: 300px;
-		}
-
-		&_closed {
-			transform: translateX(100%);
-		}
-
-		&_opened {
-			transition: transform 300ms ease-in-out;
-			transform: translateX(2px);
-		}
-	}
-
-	&__navigation-list {
-		width: 100%;
-
-		& > .burger__navigation-item:not(:last-child) {
-			margin-bottom: 20px;
-		}
-	}
-
-	&__navigation-item {
-		width: 100%;
-		height: max-content;
-		position: relative;
-		border-top-left-radius: 8px;
-		border-top-right-radius: 8px;
-		overflow: hidden;
-
-		&:after {
-			position: absolute;
-			width: 100%;
-			content: '';
-			bottom: 0;
-			left: 0;
-			height: 1px;
-		}
-
-		&:hover:after {
-			background: rgba(255, 255, 255, 0.5);
-		}
-	}
-
-	&__navigation_link {
-		padding: 10px 0 10px 0;
-		width: 100%;
-		font-family: "Noto Sans", sans-serif;
-		font-weight: 500;
-		font-size: 16px;
-		color: $primary-font-color;
-		transition: color 200ms ease-in-out;
-		display: block;
-		text-align: center;
-		text-transform: uppercase;
-
-		&:hover {
-			background: rgba(255, 255, 255, 0.05);
-		}
+	@include mobile-l {
+		right: 13px;
 	}
 
 	&__button {
@@ -93,6 +23,11 @@
 		z-index: 2;
 		transition: border-color 150ms ease-in-out;
 
+		@include mobile-l {
+			background: transparent;
+			border: none;
+		}
+
 		&_open {
 			justify-content: flex-end;
 
@@ -105,6 +40,8 @@
 				width: 30px;
 				height: 2px;
 				right: 11px;
+
+				box-shadow: 0 0 5px 5px #000;
 			}
 
 			span:nth-child(1) {
@@ -119,11 +56,12 @@
 				top: 50%;
 				border-radius: 2px;
 				transition: width 150ms ease-in-out,
-										background 150ms ease-in-out;
+				background 150ms ease-in-out;
 			}
 
 			span:nth-child(3) {
 				top: calc(50% + 7px);
+				background: #B8B8B8;
 				transition:
 						top 150ms ease-in-out,
 						transform 150ms ease-in-out,
@@ -199,6 +137,131 @@
 
 		&_disabled {
 			display: none;
+		}
+	}
+
+	&__menu {
+		position: fixed;
+		z-index: 1;
+		right: 0;
+		top: 85px;
+		width: 430px;
+		background: rgba(8, 8, 8, 1);
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+		border: 1px solid rgba(255, 255, 255, .4);
+		box-shadow: inset 0 0 50px 7px rgba(255, 255, 255, 0);
+		padding: 30px;
+
+		@include tablet {
+			width: 300px;
+		}
+
+		@include mobile-l {
+			width: 100vw;
+			height: 100vh;
+			top: 0;
+			left: -2px;
+			border-radius: 0;
+			border: none;
+			padding-top: 80px;
+			background: rgba(8, 8, 8, .95);
+		}
+
+		&_closed {
+			transform: translateX(100%);
+		}
+
+		&_opened {
+			transition: transform 300ms ease-in-out;
+			transform: translateX(2px);
+		}
+	}
+
+	&__navigation-list {
+		width: 100%;
+
+		& > .burger__navigation-item:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__navigation-item {
+		width: 100%;
+		height: max-content;
+		position: relative;
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+		overflow: hidden;
+
+		&:after {
+			position: absolute;
+			width: 100%;
+			content: '';
+			bottom: 0;
+			left: 0;
+			height: 1px;
+		}
+
+		&:hover:after {
+			background: rgba(255, 255, 255, 0.5);
+		}
+
+		@include mobile-l {
+			&:after {
+				background: rgba(255, 255, 255, 0.5);
+			}
+
+			&:active:after {
+				background: rgba(241, 168, 20, 1);
+			}
+		}
+
+		&_phone {
+			@include mobile-l {
+				&:after {
+					background: transparent;
+				}
+
+				&:hover:after {
+					background: transparent;
+				}
+
+				&:active:after {
+					background: transparent;
+				}
+			}
+		}
+	}
+
+	&__navigation-link {
+		padding: 10px 0 10px 0;
+		width: 100%;
+		font-family: "Noto Sans", sans-serif;
+		font-weight: 500;
+		font-size: 16px;
+		color: $primary-font-color;
+		transition: color 200ms ease-in-out;
+		display: block;
+		text-align: center;
+		text-transform: uppercase;
+
+		&:hover {
+			background: rgba(255, 255, 255, 0.05);
+		}
+
+		@include mobile-l {
+			background: rgba(255, 255, 255, 0.05);
+		}
+
+		&_phone {
+			@include mobile-l {
+				background: transparent;
+
+				&:hover {
+					background: transparent;
+				}
+			}
 		}
 	}
 }

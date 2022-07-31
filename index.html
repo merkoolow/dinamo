@@ -31,25 +31,28 @@
 				<menu class="burger__menu burger__menu_closed">
 					<ul class="burger__navigation-list">
 						<li class="burger__navigation-item">
-							<a href="#home" class="burger__navigation_link">главная</a>
+							<a href="#home" class="burger__navigation-link">главная</a>
 						</li>
 						<li class="burger__navigation-item">
-							<a href="#menu" class="burger__navigation_link">меню</a>
+							<a href="#menu" class="burger__navigation-link">меню</a>
 						</li>
 						<li class="burger__navigation-item">
-							<a href="#delivery" class="burger__navigation_link">доставка</a>
+							<a href="#delivery" class="burger__navigation-link">доставка</a>
 						</li>
 						<li class="burger__navigation-item">
-							<a href="#contacts" class="burger__navigation_link">контакты</a>
+							<a href="#contacts" class="burger__navigation-link">контакты</a>
 						</li>
 						<li class="burger__navigation-item">
-							<a href="#menu" class="burger__navigation_link">акции</a>
+							<a href="#menu" class="burger__navigation-link">акции</a>
+						</li>
+						<li class="burger__navigation-item burger__navigation-item_phone">
+							<a href="tel:380661234567" class="burger__navigation-link burger__navigation-link_phone">+38 (066) 123 45 67</a>
 						</li>
 					</ul>
 				</menu>
 			</div>
 
-			<div class="menu menu_closed" id="popupMenu">
+			<div class="menu menu_opened" id="popupMenu">
 				<h2 class="heading menu__heading">Меню</h2>
 				<button class="menu__close" id="popupMenuClose"></button>
 
@@ -441,7 +444,7 @@
 				setTimeout(() => {
 					const uselessStyle = document.getElementById('offTransition');
 					uselessStyle.remove();
-				}, 800);
+				}, 900);
 			});
 		</script>
 	</body>

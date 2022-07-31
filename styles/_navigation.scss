@@ -111,7 +111,20 @@
 		}
 	}
 
+	&__phone {
+		span {
+			@include mobile-l {
+				display: none;
+			}
+		}
+	}
+
 	&__socials {
 		margin-left: 20px;
+
+		@include mobile-l {
+			margin-left: 16px;
+			margin-right: 9px;
+		}
 	}
 }

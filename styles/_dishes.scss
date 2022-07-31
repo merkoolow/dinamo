@@ -18,6 +18,10 @@
 		@include desktop-s {
 			padding: 50px 0 50px 0;
 		}
+
+		@include mobile-l {
+			padding: 30px 20px 30px 20px;
+		}
 	}
 
 	&__description {
@@ -123,6 +127,11 @@
 		overflow-x: scroll;
 		gap: 5px;
 		padding-bottom: 10px;
+
+		@include mobile-l {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
 	}
 
 	&__card {
@@ -134,6 +143,29 @@
 		@include tablet {
 			width: 196.8px;
 			height: 304.8px;
+		}
+
+		@include mobile-l {
+			width: calc(50% - 5px);
+			height: auto;
+
+			&:before {
+				content: '';
+				display: block;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				padding-top: 100%;
+			}
+
+			&:after {
+				display: none;
+			}
+
+			.dishes__img {
+				object-fit: cover;
+			}
 		}
 
 		&:after {
@@ -203,6 +235,11 @@
 		@include tablet {
 			width: 170px;
 			height: 60px;
+		}
+
+		@include mobile-l {
+			opacity: 1;
+			transform: translate(-50%, -50%) scaleX(1);
 		}
 	}
 

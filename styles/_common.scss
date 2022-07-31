@@ -172,6 +172,10 @@
 	@include tablet {
 		margin-bottom: 30px;
 	}
+
+	@include mobile-l {
+		margin-bottom: 60px;
+	}
 }
 
 .main {

@@ -22,6 +22,10 @@
 		@include tablet {
 			padding: 50px;
 		}
+
+		@include mobile-l {
+			padding: 25px 45px 30px 45px;
+		}
 	}
 
 	&__card-container {
@@ -35,6 +39,11 @@
 			justify-content: space-between;
 			gap: 0;
 			margin-bottom: 30px;
+		}
+
+		@include mobile-l {
+			gap: 30px;
+			flex-direction: column;
 		}
 	}
 
@@ -60,6 +69,10 @@
 			width: 30%;
 			min-width: 160px;
 		}
+
+		@include mobile-l {
+			width: 100%;
+		}
 	}
 
 	&__card-img {
@@ -79,6 +92,10 @@
 			height: 100%;
 			margin-bottom: 25px;
 		}
+
+		@include mobile-l {
+			margin-bottom: 40px;
+		}
 	}
 
 	&__card-description {
@@ -91,6 +108,10 @@
 
 		@include tablet {
 			font-size: 14px;
+		}
+
+		@include mobile-l {
+			font-size: 18px;
 		}
 	}
 
@@ -123,6 +144,11 @@
 				right: 0;
 				max-width: 18vw;
 			}
+
+			@include mobile-l {
+				max-width: 50%;
+				transform: translateX(65%) translateY(75%) rotate(102deg);
+			}
 		}
 
 		&_3 {
@@ -133,6 +159,10 @@
 			@include tablet {
 				max-width: 21vw;
 				transform: translate(10%, 50%);
+			}
+
+			@include mobile-l {
+				display: none;
 			}
 		}
 
@@ -152,6 +182,13 @@
 				top: 0;
 				max-width: 18vw;
 				transform: translateY(-25%) translateX(-25%);
+			}
+
+			@include mobile-l {
+				max-width: 50%;
+				transform: translateX(5%) rotate(150deg);
+				left: unset;
+				right: 0;
 			}
 		}
 	}

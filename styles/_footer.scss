@@ -9,6 +9,10 @@
 		@include wrapper(20px, 50px, 30px, 50px, 1920px);
 	}
 
+	@include mobile-l {
+		@include wrapper(45px, 20px, 30px, 20px);
+	}
+
 	&__row {
 		display: flex;
 		justify-content: space-between;
