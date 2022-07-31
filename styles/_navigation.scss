@@ -27,6 +27,11 @@
 		@include desktop-s {
 			grid-area: tl;
 		}
+
+		@include mobile-v {
+			width: 105.25px;
+			height: 49.5px;
+		}
 	}
 
 	&__list {

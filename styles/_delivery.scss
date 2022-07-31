@@ -22,6 +22,10 @@
 		@include mobile-l {
 			padding: 30px 20px;
 		}
+
+		@include  mobile-v {
+			padding: 0 10px 60px 10px;
+		}
 	}
 
 	&__content {

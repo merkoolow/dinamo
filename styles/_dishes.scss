@@ -22,11 +22,21 @@
 		@include mobile-l {
 			padding: 30px 20px 30px 20px;
 		}
+
+		@include mobile-v {
+			padding: 0 10px 0 10px;
+			margin-bottom: 85px;
+		}
 	}
 
 	&__description {
 		@include tablet {
 			max-width: calc(100% - 100px);
+		}
+
+		@include mobile-v {
+			max-width: 100%;
+			margin-bottom: 30px;
 		}
 	}
 
@@ -131,6 +141,12 @@
 		@include mobile-l {
 			flex-direction: row;
 			flex-wrap: wrap;
+			overflow: hidden;
+			padding-bottom: 0;
+		}
+
+		@include mobile-v {
+			gap: 10px;
 		}
 	}
 
@@ -139,34 +155,6 @@
 		height: 508px;
 		flex-shrink: 0;
 		position: relative;
-
-		@include tablet {
-			width: 196.8px;
-			height: 304.8px;
-		}
-
-		@include mobile-l {
-			width: calc(50% - 5px);
-			height: auto;
-
-			&:before {
-				content: '';
-				display: block;
-				left: 0;
-				top: 0;
-				bottom: 0;
-				right: 0;
-				padding-top: 100%;
-			}
-
-			&:after {
-				display: none;
-			}
-
-			.dishes__img {
-				object-fit: cover;
-			}
-		}
 
 		&:after {
 			content: '';
@@ -189,6 +177,38 @@
 
 		&:hover:after {
 			background: rgba(0, 0, 0, .0);
+		}
+
+		@include tablet {
+			width: 196.8px;
+			height: 304.8px;
+		}
+
+		@include mobile-l {
+			width: calc(50% - 5px);
+			height: auto;
+
+			&:before {
+				content: '';
+				display: block;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				padding-top: 100%;
+			}
+
+			&:after {
+				background-color: rgba(0, 0, 0, .4);
+			}
+
+			.dishes__img {
+				object-fit: cover;
+			}
+		}
+
+		@include mobile-v {
+			width: 100%;
 		}
 	}
 
@@ -234,12 +254,15 @@
 
 		@include tablet {
 			width: 170px;
-			height: 60px;
 		}
 
 		@include mobile-l {
 			opacity: 1;
 			transform: translate(-50%, -50%) scaleX(1);
+		}
+
+		@include mobile-v {
+			width: 229px;
 		}
 	}
 
@@ -257,6 +280,16 @@
 
 		@include tablet {
 			font-size: 18px;
+		}
+
+		@include mobile-v {
+			font-size: 24px;
+			bottom: unset;
+			top: calc(50% - 66px);
+			line-height: 32px;
+			height: 32px;
+			width: 80%;
+			transform: translateX(-50%) translateY(-50%);
 		}
 	}
 

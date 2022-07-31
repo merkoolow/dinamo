@@ -9,8 +9,11 @@
 
 .logo {
 	width: 133px;
-	height: 66px;
 	position: relative;
+
+	@include mobile-v {
+		width: 111px;
+	}
 
 	&__img {
 		position: absolute;
@@ -157,6 +160,12 @@
 	@include tablet {
 		font-size: 36px;
 		line-height: 50px;
+	}
+
+	@include mobile-v {
+		font-size: 28px;
+		line-height: 38px;
+		margin-bottom: 30px;
 	}
 }
 

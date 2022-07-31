@@ -26,6 +26,10 @@
 		@include mobile-l {
 			padding: 25px 45px 30px 45px;
 		}
+
+		@include mobile-v {
+			padding: 0 10px 60px 10px;
+		}
 	}
 
 	&__card-container {
@@ -73,6 +77,11 @@
 		@include mobile-l {
 			width: 100%;
 		}
+
+		@include mobile-v {
+			width: calc(100% - 70px);
+			margin: 0 auto;
+		};
 	}
 
 	&__card-img {
@@ -132,6 +141,12 @@
 				transform: translateY(-20%);
 				max-width: 17vw;
 			}
+
+			@include mobile-v {
+				left: 0;
+				transform: translateX(-40%) translateY(-110%);
+				max-width: 40vw;
+			}
 		}
 
 		&_2 {
@@ -149,6 +164,11 @@
 				max-width: 50%;
 				transform: translateX(65%) translateY(75%) rotate(102deg);
 			}
+
+			@include mobile-v {
+				max-width: 60%;
+				transform: translateX(65%) translateY(50%) rotate(102deg);
+			};
 		}
 
 		&_3 {

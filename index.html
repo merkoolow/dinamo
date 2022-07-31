@@ -52,7 +52,7 @@
 				</menu>
 			</div>
 
-			<div class="menu menu_opened" id="popupMenu">
+			<div class="menu menu_closed" id="popupMenu">
 				<h2 class="heading menu__heading">Меню</h2>
 				<button class="menu__close" id="popupMenuClose"></button>
 
@@ -238,7 +238,7 @@
 				</nav>
 
 				<section class="header__content">
-					<h1><nobr>Попробуй лучшую</nobr> <nobr><span>грузинскую</span> кухню</nobr> <nobr>в Киеве.</nobr></h1>
+					<h1>Попробуй лучшую <span>грузинскую</span> кухню <br> в Киеве.</h1>
 					<p>
 						В нашем ресторане Вы найдете лучшие блюда приготвленные по старинным рецептам грузинской кухни.
 						Потрясающий вкус блюд перенесет Вас к атмосферу невероятного Тбилисси не выходя из дома.
@@ -376,15 +376,18 @@
 					</div>
 				</section>
 
-				<section class="gallery">
-					<img src="./images/gallery/gal1_min.jpg" alt="food" class="gallery__img min-src">
-					<img src="./images/gallery/gal2_min.jpg" alt="food" class="gallery__img min-src">
-					<img src="./images/gallery/gal3_min.jpg" alt="food" class="gallery__img min-src">
-					<img src="./images/gallery/gal4_min.jpg" alt="food" class="gallery__img min-src">
-					<img src="./images/gallery/gal5_min.jpg" alt="food" class="gallery__img min-src">
-					<img src="./images/gallery/gal6_min.jpg" alt="food" class="gallery__img min-src">
-					<img src="./images/gallery/gal7_min.jpg" alt="food" class="gallery__img min-src">
-					<img src="./images/gallery/gal8_min.jpg" alt="food" class="gallery__img min-src">
+				<section class="gallery" id="gallery">
+					<div class="gallery__container" id="galleryContainer">
+						<img src="./images/gallery/gal1_min.jpg" alt="food" class="gallery__img gallery__img_visible min-src">
+						<img src="./images/gallery/gal2_min.jpg" alt="food" class="gallery__img min-src">
+						<img src="./images/gallery/gal3_min.jpg" alt="food" class="gallery__img min-src">
+						<img src="./images/gallery/gal4_min.jpg" alt="food" class="gallery__img min-src">
+						<img src="./images/gallery/gal5_min.jpg" alt="food" class="gallery__img min-src">
+						<img src="./images/gallery/gal6_min.jpg" alt="food" class="gallery__img min-src">
+						<img src="./images/gallery/gal7_min.jpg" alt="food" class="gallery__img min-src">
+						<img src="./images/gallery/gal8_min.jpg" alt="food" class="gallery__img min-src">
+					</div>
+					<div class="gallery__pagination" id="galleryPagination"></div>
 				</section>
 			</main>
 
@@ -439,6 +442,7 @@
 		<script src="scripts/dishes-scroll.js"></script>
 		<script src="scripts/menu.js"></script>
 		<script src="scripts/burger.js"></script>
+		<script src="scripts/gallery-slider.js"></script>
 		<script>
 			window.addEventListener('load', () => {
 				setTimeout(() => {
