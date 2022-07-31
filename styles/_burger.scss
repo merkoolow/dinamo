@@ -12,7 +12,7 @@
 
 	@include mobile-v {
 		right: 3px;
-		top: 12px;
+		top: 13px;
 	}
 
 	&__button {
@@ -46,7 +46,6 @@
 				height: 3px;
 				right: 11px;
 				z-index: 1;
-				box-shadow: 0 0 5px 5px #000;
 			}
 
 			span:nth-child(1) {
@@ -66,7 +65,6 @@
 
 			span:nth-child(3) {
 				top: calc(50% + 7px);
-				background: #B8B8B8;
 				transition:
 						top 150ms ease-in-out,
 						transform 150ms ease-in-out,
@@ -82,6 +80,7 @@
 					height: 7px;
 					border-radius: 50%;
 					will-change: width, height;
+					box-shadow: 0 0 5px 5px #000;
 					transition:
 							width 150ms ease-in-out,
 							height 100ms ease-in-out 150ms;
@@ -94,6 +93,7 @@
 					height: 3px;
 					transform: translateY(-50%) rotate(-25deg);
 					top: 50%;
+					box-shadow: 0 0 5px 5px #000;
 				}
 
 				span:nth-child(3) {
@@ -103,6 +103,7 @@
 					height: 3px;
 					transform: translateY(-50%) rotate(25deg);
 					top: 50%;
+					box-shadow: 0 0 5px 5px #000;
 				}
 			}
 		}
@@ -159,9 +160,21 @@
 		padding: 30px;
 
 		@include tablet {
-			width: 300px;
+			width: max-content;
 		}
-
+		
+		@media (max-height: 550px) {
+			width: 100vw;
+			height: 100vh;
+			top: 0;
+			left: -2px;
+			border-radius: 0;
+			border: none;
+			padding-top: 80px;
+			background: rgba(8, 8, 8, .95);
+			overflow: auto;
+		}
+		
 		@include mobile-l {
 			width: 100vw;
 			height: 100vh;
