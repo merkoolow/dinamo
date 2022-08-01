@@ -4,24 +4,32 @@
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background: #CFCFCF;
 	z-index: 8;
-	display: flex;
-	flex-direction: column;
 	transform-origin: 50% 50%;
 	transition:
 			opacity 350ms ease-in-out,
 			transform 250ms ease-in-out;
+	background: #CFCFCF;
+	display: flex;
+	justify-content: center;
 
-	@include wrapper(30px, 30px, 30px, 30px, 1920px);
+	&__wrapper {
+		padding: 30px;
+		max-width: 1920px;
+		width: 100%;
+		height: max-content;
+		display: flex;
+		flex-direction: column;
+		position: relative;
 
-	@include mobile-l {
-		@include wrapper(20px, 20px, 20px, 20px);
+		@include mobile-l {
+			padding: 20px;
+		}
 	}
 
 	&__close {
 		position: absolute;
-		right: 20px;
+		right: 30px;
 		top: 49px;
 		width: 88px;
 		height: 34px;
@@ -35,7 +43,14 @@
 		}
 
 		@include mobile-l {
-			top: 28px;
+			right: 20px;
+			top: 31px;
+			height: 28px;
+			width: 76px;
+		}
+
+		@include mobile-v {
+			top: 26px;
 		}
 
 		&:after {
