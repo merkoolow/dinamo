@@ -1,1 +1,1 @@
-DEMO LINK: https://sanyaswb.github.io/homework_05_cheburek
+DEMO LINK: https://sanyaswb.github.io/dinamo
