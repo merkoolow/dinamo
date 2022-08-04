@@ -8,6 +8,7 @@ class GallerySlider {
 	paginationItems = [];
 
 	interval = null;
+	active = false;
 
 	constructor() {
 		this.init();
@@ -15,11 +16,13 @@ class GallerySlider {
 
 	init() {
 		this.switchSlide = this.switchSlide.bind(this);
+		this.onResize = this.onResize.bind(this);
 
 		this.getImages();
 		this.fillPagination();
+		this.onResize();
 
-		setInterval(this.switchSlide, 2000);
+		this.setEvents();
 	}
 
 	setEvents() {
@@ -81,6 +84,16 @@ class GallerySlider {
 		this.paginationItems[nextIndex].el.classList.add('gallery__pagination-item_active');
 
 		this.currentIndex = nextIndex;
+	}
+
+	onResize() {
+		if (window.innerWidth > 480 && this.active) {
+			clearInterval(this.interval);
+			this.active = false;
+		} else if (window.innerWidth <= 480 && !this.active) {
+			this.active = true;
+			this.interval = setInterval(this.switchSlide, 2000);
+		}
 	}
 }
 
