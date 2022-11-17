@@ -1,1 +1,0 @@
-DEMO LINK: https://merkoolow.github.io/dinamo

@@ -24,7 +24,3 @@ Desktop.ini
 
 # Jetbrains IDE
 .idea/
-
-# scss
-*.css
-*.css.map
