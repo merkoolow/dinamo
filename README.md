@@ -1,1 +1,1 @@
-DEMO LINK: https://sanyaswb.github.io/dinamo
+DEMO LINK: https://merkoolow.github.io/dinamo
